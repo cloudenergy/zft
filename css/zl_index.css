@@ -1,0 +1,97 @@
+@charset "gb2312";
+/* CSS Document */
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+.mar50{ height:50px; clear:right;}
+body {
+	margin: 0; padding:0; font-family:"Microsoft YaHei";
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block
+}
+a {
+	background-color: transparent
+}
+a:active, a:hover {
+	outline: 0
+}
+.clear{ clear:both;}
+img {
+	border: 0
+}
+h1 {
+	margin: .67em 0;
+	font-size: 2em
+}
+dl,ul{ list-style:none; margin:0; padding:0;}
+
+/*begin*/
+.rgbox_top{ background:rgba(245,245,245,1); height:auto; overflow:hidden; }
+.rgcom_cen{ width:68%; margin:auto; padding:90px 0 0; }
+.rgcom_cen h1,.sj_box h1{ font-size:42px; text-align:center; font-weight:normal;}
+.rgcom_cen h2,.sj_box h2{ font-size:18px; text-align:center; color:#737373; font-weight:normal; line-height:0%;}
+@media screen and (max-width:1500px){
+.rgcom_cen{width:85%;}
+}
+.rgcom_icon{ height:auto; overflow:hidden; padding:108px 0 175px 0;}
+.rgcom_icon dl{ text-align:center; float:left; width:14.28%;}
+.rgcom_icon dl dt{ margin-bottom:35px; }
+.rgcom_icon dl dd{ color:#737373; display:inline; font-size:18px; margin:0; }
+.rgcom_icon dl dd p{ line-height:240%; }
+
+.zbqf_box{ background:rgba(255,255,255,1); height:auto; overflow:hidden; padding:60px 0 0;}
+.sj_box{  width:70%; margin:0 auto;}
+@media screen and (min-width:1400px){
+.focus .left{ width:414px;}	
+.focus .right{ width:440px;}
+.focus{ width:1050px;}
+	}
+@media screen and (max-width:1400px){
+.focus .left,.focus .right{ width:50%;}	
+.focus{width:100%;}
+.sj_box{  width:90%; margin:0 auto;}
+	}
+
+.focus{height:731px;margin:0 auto; position:relative;}
+.focus .left{float:left; height:731px; position:relative;left: 100px;overflow:hidden;  background:url(../img/style/telphoto.jpg) no-repeat;}
+.focus .left li{position:absolute; left:0; top:0; width:1003px; height:631px;padding:60px 0 0 14px; z-index:1; opacity:0; filter:alpha(opacity=0);}
+.focus .left li.active{z-index:2;}
+.focus .left li p{display:none;}
+.focus .numtit a{ float:left; width:10px; height:10px; background:#CCC; margin:0 5px;}
+
+.focus .right{float:right;  padding:64px 0 0;}
+.focus .right li{height:131px; /*overflow:hidden; padding-left:10px;*/background-image:url(../images/btns.html);/*background-position:-120px 0;*/ color:#0085e1; font-size:24px; /*line-height:88px;*/ margin-bottom:5 px;cursor: pointer;}
+.focus .right li:hover,.focus .right li.active{color:#0085e1;/*background-position:-120px -120px;*/ }
+.focus .right li i{background-image:url(../images/btns.html); background-repeat:no-repeat; width:60px; height:110px; float:left; margin:0 48px 0px 0;}
+.focus .right .dn_tit h3{ font-size:24px; font-weight:normal; margin:0; color:#515151; text-align:left;}
+.focus .right .dn_tit{ }
+.focus .right .dn_tit p{ font-size:18px; padding-top:15px; line-height:30px; margin:0; color:#868686;}
+.focus .right li:hover h3,.focus .right li.active h3{ color:#0085e1;}
+.focus .right li:hover p,.focus .right li.active p{ color:#4daffa;}
+
+.focus .right li i.i1{/*background-position:0 0;*/ background:url(../img/style/tab1.jpg) no-repeat; }
+.focus .right li i.i2{/*background-position:0 -60px;*/ background:url(../img/style/tab2.jpg) no-repeat;}
+.focus .right li i.i3{/*background-position:0 -120px;*/background:url(../img/style/tab3.jpg) no-repeat;}
+.focus .right li i.i4{/*background-position:0 -180px;*/ background:url(../img/style/tab4.jpg) no-repeat;}
+.focus .right li:hover i.i1,.focus .right li.active i.i1{/*background-position:-60px 0;*/background:url(../img/style/tab1_hov.jpg) no-repeat;}
+.focus .right li:hover i.i2,.focus .right li.active i.i2{/*background-position:-60px -60px;*/background:url(../img/style/tab2_hov.jpg) no-repeat;}
+.focus .right li:hover i.i3,.focus .right li.active i.i3{/*background-position:-60px -120px;*/background:url(../img/style/tab3_hov.jpg) no-repeat;}
+.focus .right li:hover i.i4,.focus .right li.active i.i4{/*background-position:-60px -180px;*/background:url(../img/style/tab4_hov.jpg) no-repeat;}
+
+.focus .num1{ position:absolute; bottom:0px; left:0; z-index:9; padding:0 0 10px 160px;}
+.focus .num1 li{ background:#a7a8aa; float:left; width:13px; height:13px; margin:0 5px; border-radius:50%; }
+.focus .num1 li.active{ background:#676767;}
+
+.banner{width:100%;overflow:hidden;height:870px;position:relative}
+.banList{position:absolute;left:50%;margin-left:-960px;height:18rem}
+.banList li{height:870px;opacity:0;position:absolute;transform:scale(0);transition:transform 0.5s ease 0s, opacity 1.5s ease 0s;z-index:1;}
+.banList li.active{opacity:1;transform:scale(1);z-index:2;}
+.fomW{position:absolute;bottom:20px;left:50%;height:20px;z-index:9;width:1000px;margin-left:-500px}
+.jsNav{text-align:center;}
+.jsNav a{display:inline-block;background:rgba(139,151,162,1);width:15px;height:15px;border-radius:50%;margin:0 5px;}
+.jsNav a.current{background:rgba(56,58,59,1);cursor:pointer}
+

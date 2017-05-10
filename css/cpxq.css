@@ -1,0 +1,74 @@
+.onlyimg{
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.onlyimg img{width:100%;}
+
+.imgcss{
+  vertical-align:top;
+}
+.content01{
+    
+}
+.content01 .title01{
+    text-align: center;padding-top: 5em;padding-bottom: 2em;
+}
+.content01 .title01 h1{
+    font-size: 36px; font-weight: 100;color:#555;line-height: 46px;height: 46px;
+}
+.content01 .title01 h3{
+    font-size: 16px; font-weight: 100;color:#777;line-height: 26px;height: 26px;
+}
+
+.imgbox{
+    width:100%;text-align: center;overflow: hidden;
+}
+.imgbox .smallimg{
+    width:80%;max-width: 1200px; margin: 0 auto;
+}
+.imgbox .protext .textimg{
+    max-width: 1200px; 
+    width:100%;
+}
+.imgbox .protext .textimg img{
+    width:100%;max-width: 1200px;
+}
+.imgbox .smallimg img{
+    width:100%;max-width: 1200px; 
+}
+.bgcolor01{
+    background: #f4f8fb;
+}
+.bgcolor02{
+    background: #fff;
+}
+.bgcolor03{
+    background: #eeeeee;
+}
+.bgcolor04{
+    background: #1e1e1e;
+}
+.protext{
+    width:80%;max-width: 1200px; margin: 0 auto;padding-bottom: 150px;
+}
+.protext .p1{
+    font-size:24px;font-weight: 400;color:#000;
+    padding-top: 100px;line-height: 30px;height: 30px;text-align: center;
+}
+.protext li{
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: left;
+    color: #222;
+    font-family: Microsoft YaHei;
+    list-style-type:disc;
+}
+.imgbox .fengexian{
+    border-top:1px #ddd solid;margin-top: 40px;margin-bottom: 60px;
+}
+.lazy{
+    vertical-align: top;
+}

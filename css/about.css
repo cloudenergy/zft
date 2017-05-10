@@ -1,0 +1,102 @@
+
+.yinyingback {
+    width:100%;background: url(../img/jiage/jg_01.jpg);height: 9px;
+}
+
+.aboutimg{
+    width:100%;padding-top: 0px;
+}
+.aboutimg img{
+    vertical-align:top;
+}
+@media screen and (min-width:1930px){
+    .aboutimg img{
+       width:100%;
+    }
+    .aboutimg3 img{
+       width:100%;
+    }
+}
+.aboutimg3 {
+    width:100%;position: relative;
+}
+.aboutimg3 img{
+    vertical-align:top;
+}
+.aboutimg3 .part1{
+    position: absolute; top: 8%; left: 67%;text-align: left;
+}
+.aboutimg3 .part1 p{
+    line-height: 2em;height: 2em;color:#f7f7f7;font-size: 1.1em;
+}
+.aboutimg3 .part2{
+    position: absolute; top:  70%; left: 62%;text-align: left;
+}
+.aboutimg3 .part2 p{
+    line-height: 2em;height: 2em;color:#eaeaea;font-size:1em;font-weight: 100;
+}
+.aboutimg3 .part2 a:hover{
+    color:#f7c875;
+}
+.aboutimg4{
+    text-align: center;padding-top: 38px;padding-bottom: 17px;
+}
+.gsjj{
+    width:100%;background: url(../img/about/ab_06.jpg);height: 850px;
+}
+.jieshao{
+    
+    max-width:1198px;margin: 0 auto;border: 1px #4985d4 solid;height: 354px;
+     position:relative;
+    margin: 50px auto;margin-bottom: 100px;
+}
+.jieshao .content{
+    width:95%; height:314px; border:1px #bfbfbf solid; position: absolute; top:-15px; left: -15px; z-index: 99;  
+    text-align: center;font-family: Microsoft YaHei;padding:40px 30px 0 30px;
+}
+.jieshao .content h1{
+    height: 85px;line-height: 85px;font-size:22px;text-align: center;
+    font-weight: 400;color:#333;
+}
+.jieshao .content h2{
+    font-size:17px;font-weight: 100;margin-top: 30px;line-height: 40px;
+    text-align: left;color:#555;text-indent: 2em;
+}
+.jieshao .content p{
+    height: 20px;
+}
+
+
+
+/*渠道合作*/
+.qudao_con{
+    width:100%;background: url(../img/qudao/qd_01.jpg) repeat;height: 670px;
+}
+.qudao_con .qd_pic1{
+    width:50%;margin: 0 auto;text-align: center;padding-top:60px;
+}
+.qudao_con .qd_text{
+    width:90%;margin: 70px auto;
+   height: 252px;max-width: 1086px;
+}
+
+.qudao_con .qd_text{
+    width:100%;position: relative;
+}
+.qudao_con .qd_text .imgcss{
+    width:100%;vertical-align:top;
+}
+.qudao_con .qd_text .cont{
+    position: absolute;
+    top: 34%;
+    width:86%;
+    left:7%;
+    text-indent: 2em;
+    line-height: 2em;
+    font-weight: 100;
+    color: #666;
+    font-size: 1.1em;
+}
+
+
+/*渠道合作*/

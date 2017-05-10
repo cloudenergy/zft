@@ -1,0 +1,26 @@
+#header {
+    width: 75%;
+}
+#header .header-nav span {
+   margin-left: 2em;
+    
+}
+.jg_foot .lianxi{
+    width:70%;
+}
+.imgcss{
+    width:100%;vertical-align:top;
+}
+
+.ptbjlist .list1 img{
+    width:20em;
+}
+.lazy{
+   width: 100%;
+}
+.aboutimg3 img{
+    width:100%;vertical-align:top;
+}
+.aboutimg img{
+    width:100%;
+}

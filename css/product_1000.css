@@ -1,0 +1,52 @@
+#header {
+    width: 95%;
+}
+#header .header-nav span {
+   margin-left: 1.8em;
+    
+}
+#header .logo img{
+   width:100%;
+}
+
+/* 首页轮播图*/
+.banner{width:100%;overflow:hidden;height:400px;position:relative}
+.banList{position:absolute;left:50%;margin-left:-680px;height:18rem}
+.banList li a img{height:400px;}
+.tshop .eventareas ul li{
+    width:200px;
+}
+.tshop .eventareas ul li .imgbox{
+    height: 240px;
+}
+
+
+/* 首页公司简介*/
+.jieshao{
+     max-width:1200px;width:80%;
+}
+.jieshao .content h2{
+     font-size:15px;margin-top: 20px;line-height: 30px;
+}
+
+
+/* 渠道合作*/
+.qudao_con .qd_text .cont{
+    top:30%;
+    font-size: 20px;
+}
+.imgcss{
+    width:100%;vertical-align:top;
+}
+.ptbjlist .list1 img{
+    width:20em;
+}
+.lazy{
+   width: 100%;
+}
+.aboutimg3 img{
+    width:100%;vertical-align:top;
+}
+.aboutimg img{
+    width:100%;
+}

@@ -1,0 +1,119 @@
+
+.yinyingback {
+    width:100%;background: url(../img/jiage/jg_01.jpg);height: 9px;
+}
+.conpart{
+    width:100%;font-family: Microsoft YaHei;padding-top: 67px;
+}
+.conpart .tubiao{
+    width:70%;max-width:1200px;margin: 20px auto;text-align: center;
+}
+.conpart .tubiao img{
+
+}
+.conpart .kongbai{
+    height: 120px;
+}
+.conpart .kongbai4{ 
+    height: 80px;
+}
+
+.wenzi {
+   width:70%; text-align: center;max-width:1200px;margin: 0 auto;
+}
+.wenzi h1{
+    font-size: 2rem;font-weight: 100;color:#888;
+}
+.wenzi p{
+    margin:20px auto;
+    line-height: 36px;color:#aaa;font-size:16px;
+}
+.jiage{
+    width:88%;max-width:1380px;margin:0px auto;margin-top: 50px;text-align: center;
+}
+.jiage h3{
+    font-size: 22px;text-align: center;color:#555;font-weight: 100;
+}
+.jiage .jglist .jgli1{
+    width:23%;float:left;margin-right: 1%;
+}
+.jiage .jglist .jgli2{
+    width:23%;float:left;margin: 0 1% 0 1%;
+}
+.jiage .jglist .jgli3{
+    width:23%;float:left;margin: 0 1% 0 1%;
+}
+.jiage .jglist .jgli4{
+    width:23%;float:left;margin-left: 1%;
+}
+.jiage .jglist{
+    text-align: center;margin: 20px auto;font-weight: 100;overflow: hidden;
+}
+.jiage .jglist h4{
+    font-size:16px; color:#777;height: 36px;line-height: 36px;font-weight:100;
+}
+.jiage .jglist h5{
+    font-size:1.5rem; color:#397fff;height: 46px;line-height: 46px;font-weight:100;
+}
+.jiage .jglist .buy{
+     border: 1px #397fff solid;height:30px;width:120px;line-height: 30px;
+     margin: 4px auto;font-size: 14px;color:#397fff;
+}
+.jiage .jxtimg{
+     margin-top: 50px;
+}
+.jiage .jxtimg img{
+     width:100%;
+}
+.jgpart2{
+     background: #f5f5f5;
+}
+.jgpart2 .tubiao img{
+     margin-top: 60px;
+}
+.jgpart3 .tubiao img{
+     margin-top: 60px;
+}
+
+.jiage .jglisttwo{
+    text-align: center;margin: 20px auto;font-weight: 100;overflow: hidden;width:80%;
+}
+.jiage .jglisttwo h4{
+    font-size:16px; color:#777;height: 36px;line-height: 36px;font-weight:100;
+}
+.jiage .jglisttwo h5{
+    font-size:1.5rem; color:#397fff;height: 46px;line-height: 46px;font-weight:100;
+}
+.jiage .jglisttwo .buy{
+     border: 1px #397fff solid;height:30px;width:120px;line-height: 30px;
+     margin: 4px auto;font-size: 14px;color:#397fff;
+}
+.jiage .jglisttwo .jgli1{
+    width:30%;float:left;margin-right: 1%;margin-top:10px;margin-left: 2%;margin-bottom: 20px;
+}
+/*
+.jxtimg{
+    width:100%;margin: 0 auto;margin-top: 50px;
+}
+.jxtimg img{
+    vertical-align: top;width:100%;
+}
+.kongbai{
+    height: 120px;
+}
+.kongbai4{ 
+    height: 80px;
+}
+ */
+ .jxtimg{
+    width:100%;margin: 0 auto;margin-top: 50px;max-width: 1227px;
+}
+.jxtimg img{
+    vertical-align: top;width:100%;
+}
+.kongbai{
+    height: 120px;
+}
+.kongbai4{ 
+    height: 80px;
+}

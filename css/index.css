@@ -1,0 +1,82 @@
+
+.imgcss{
+    width:100%;vertical-align:top;
+}
+.topimg{
+    width:100%;position: relative;
+}
+.botoom_line{
+    width:100%;height: 5px;background: #13cfbe;
+}
+
+
+.onlyimg{
+    width:100%;
+    margin: 0 auto;
+}
+
+
+.lazy{
+   width: 100%;
+    vertical-align: top;
+}
+.jianjie{
+    width:100%;
+    margin: 80px auto;
+    padding-bottom: 20px;
+}
+
+/*
+.img5{
+    width:100%;position: relative;margin: 80px auto;
+    padding-bottom: 20px;
+}
+.img5 img{
+    width:100%;vertical-align:top
+}
+.img5 .content{
+    position: absolute;top: 2.5%;width:60%;margin:0px auto;  
+    text-align: center;left:20%;font-family: Microsoft YaHei;
+}
+.img5 .content h1{
+    height: 3.5em;line-height: 3.5em;font-size:140%;text-align: center;font-weight: 400;color:#333;
+}
+.img5 .content h2{
+    font-size:100%;font-weight: 100;margin-top: 2em;text-align: left;color:#555;text-indent: 2em;line-height: 2.2em;
+} */
+
+
+.jieshao{
+    width:1200px;margin: 0 auto;border: 1px #bbb solid;height: 410px;
+    background: url(../img/img_back02.jpg) repeat;
+    margin: 50px auto;margin-bottom: 100px;
+}
+.jieshao .content{
+    width:93%;margin:0px auto;  
+    text-align: center;left:20%;font-family: Microsoft YaHei;
+}
+.jieshao .content h1{
+    height: 85px;line-height: 85px;font-size:22px;text-align: center;
+    font-weight: 400;color:#333;
+}
+.jieshao .content h2{
+    font-size:17px;font-weight: 100;margin-top: 30px;line-height: 40px;
+    text-align: left;color:#555;text-indent: 2em;
+}
+.jieshao .content p{
+    height: 20px;
+}
+.indexgushi{
+    witdth:100%;
+    background: #ffffff;
+}
+.indexgushi .gspic{
+    width:90%;margin:0px auto;padding-top: 65px;overflow: hidden;padding-bottom: 65px;text-align: center;
+}
+.indexgushi .gspic span{ position:relative;}
+.indexgushi .gspic a{ position:absolute; right:0px; bottom:30px; width:200px; height:50px; display:block;}
+.indexgushi .gspic img{
+    width:100%;max-width: 1320px;max-height: 832px;
+}
+
+
