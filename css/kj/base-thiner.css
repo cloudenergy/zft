@@ -1,0 +1,439 @@
+﻿/*/
+/*
+/* Rank: 1 
+/* Standard：Google
+/*
+/*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+bdi,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  color: #333;
+  font-size: 14px;
+  font-family: tahoma, arial, Hiragino Sans GB, "Microsoft Yahei", NSimSun, SimSun;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  color: #337AB7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  float: left;
+}
+
+i {
+  font-style: normal;
+}
+
+p:empty {
+  display: none;
+}
+
+.can-not-view-marked,
+.hidden2Visible {
+  display: none;
+}
+
+
+/**************************
+  Common State of Elements
+  **************************/
+
+body {
+  background: #FFF;
+}
+
+.details {
+  width: 998px;
+  margin: 0 auto;
+}
+
+.hidden-menu {
+  display: none;
+}
+
+
+/*@media only screen and (min-width: 998px) {
+  .details {
+    width:360px;
+    margin:0 auto;
+  }
+}*/
+
+.details.article h1 {
+  font-size: 28px;
+  padding: 0 4%;
+  line-height: 44px;
+  margin-top: 8px;
+}
+
+.details.article h4 {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0 4%;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.details.article p {
+  padding: 0 4% 0 6%;
+  line-height: 24px;
+  margin-bottom: 6px;
+}
+
+hr {
+  border-bottom: 1px solid #aaaaaa;
+  border-top: none;
+}
+
+.blur-layer {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+}
+
+.blur-layer .details {
+  background: none;
+}
+
+.close {
+  width: 18px;
+  height: 18px;
+  background: url("../../img/wapsite/cssimg/12983719231233.png") no-repeat center;
+  background-size: 18px;
+}
+
+
+/***********************
+    Notification Module
+  ***********************/
+
+.notification {
+  display: none;
+  position: fixed;
+  width: 98%;
+  height: 30px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 8px;
+  top: 8px;
+  left: 50%;
+  border-radius: 3px;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background: rgba(57, 57, 57, 0.48);
+  z-index: 19999;
+}
+
+.notification.no-transparent {
+  background: rgba(57, 57, 57, 0.9);
+}
+
+.notification.show {
+  display: block;
+}
+
+.notification.red {
+  background: rgba(230, 38, 38, 0.56);
+}
+
+.notification.no-transparent.red {
+  background: rgba(230, 38, 38, 0.9);
+}
+
+.notification.green {
+  background: rgba(55, 185, 55, 0.65);
+}
+
+.notification.no-transparent.green {
+  background: rgba(55, 185, 55, 0.9);
+}
+
+.notification.orange {
+  background: rgba(230, 81, 0, 0.65);
+}
+
+.notification.no-transparent.orange {
+  background: rgba(230, 81, 0, 0.9);
+}
+
+.notification .close {
+  width: 18px;
+  height: 18px;
+  float: right;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  margin-top: 6px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, .15);
+  cursor: pointer;
+}
+
+
+/***********************
+      Form Control
+ ***********************/
+
+.form-control {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+#pwd.form-control+.vector-icons.eye {
+  position: relative;
+  float: right;
+  font-size: 24px;
+  margin-right: 22px;
+  margin-top: -38px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+#pwd.form-control+.vector-icons.eye.active {
+  color: #61b423;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 24px;
+  border-radius: 4px;
+  background-color: #EEE;
+  cursor: pointer;
+}
+
+a.btn {
+  line-height: 50px;
+}
+
+.btn[disabled],
+.form-control[disabled] {
+  cursor: not-allowed;
+  color: #8b8b8b;
+  background: #f3f3f3;
+  opacity: 1;
+}
+
+.btn.disable {}
+
+.btn.lemon {
+  color: #490003;
+  background: #FFE610;
+  letter-spacing: 6px;
+}
+
+.btn.lemon.word-spacing-smaller {
+  letter-spacing: normal;
+}
+
+.btn.float-btn {
+  position: relative;
+  width: 128px;
+  float: right;
+  font-size: 18px;
+  margin-top: -50px;
+}
+
+.btn.float-btn i {
+  margin: 0 1px;
+}
+
+
+/***********************
+    Slider Container
+ ***********************/
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 20px;
+  padding: 6px 2px;
+  background: #FFF;
+  overflow: visible;
+  z-index: 2;
+}
+
+.slider-container>ul {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  z-index: 1;
+}
+
+.slider-container li {
+  display: inline-block;
+  height: auto;
+  text-align: center;
+  margin-left: 10px;
+  float: none;
+}
+
+.slider-container li:empty {
+  display: none;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+
+/******************
+    Vector Icons
+ ******************/
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('http://at.alicdn.com/t/font_1446708274_8227072.eot');
+  /* IE9*/
+  src: url('http://at.alicdn.com/t/font_1446708274_8227072.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('http://at.alicdn.com/t/font_1446708274_8227072.woff') format('woff'), /* chrome、firefox */
+  url('http://at.alicdn.com/t/font_1446708274_8227072.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('http://at.alicdn.com/t/font_1446708274_8227072.svg#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+
+.vector-icons {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: iconfont;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.vector-icons.arrow-right-thiner::before {
+  content: "";
+}
+
+.vector-icons.arrow-up-right::before {
+  content: "";
+}
+
+.vector-icons.personal-center::before {
+  content: "";
+}
+
+.vector-icons.eye::before {
+  content: "";
+}
+
+.vector-icons.telphone::before {
+  content: "";
+}
+
+.vector-icons.location::before {
+  content: "";
+}
+
+.vector-icons.mail::before {
+  content: "";
+}

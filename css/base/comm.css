@@ -2,11 +2,11 @@
 	position: fixed;
 	width: 93.34%;
 	z-index: 99;
-	padding-left:3.33%;
-	padding-right:3.33%;
-	background:rgba(255,255,255,.97);
-	-webkit-box-shadow: 0 0 8px rgba(0,0,0,.3);
-	box-shadow: 0 0 8px rgba(0,0,0,.3)
+	padding-left: 3.33%;
+	padding-right: 3.33%;
+	background: rgba(255, 255, 255, .97);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .3)
 }
 
 .w-header .logo {
@@ -14,24 +14,29 @@
 	height: 27px;
 	display: inline-block;
 	margin-top: 16px;
-	background-image:url(../../img/style/logo.png);
+	background-image: url(../../img/style/logo.png);
 	background-repeat: no-repeat;
 	background-size: contain
 }
-@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min--moz-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {
-.w-header .logo {
-	background-image:url(../../img/style/logo.png);
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5) {
+	.w-header .logo {
+		background-image: url(../../img/style/logo.png);
+	}
 }
-}
+
 .login-box {
 	float: right;
 	padding-top: 10px
 }
+
 .login-box .btn {
 	margin-left: 35px;
 	width: 178px;
 	height: 40px;
-	line-height: 38px;
+	line-height: 40px;
 	border-radius: 20px;
 	display: inline-block;
 	text-align: center;
@@ -40,36 +45,45 @@
 }
 
 .login-box .btn:hover {
-	color: #1f49ff;
+	color: #2196f3;
 	/*background-color: #f17819;
 	border: 1px solid #fb923f!important*/
 }
+
 .login-box .btn-orange {
 	color: #fff;
 	background-color: #fb923f;
 	border: 1px solid #fb923f
 }
+
+
 /*.login-box .btn-white {
 	color: #fb923f;
 	background-color: #fff;
 	border: 1px solid #fb923f
 }*/
+
 .w-header.transparent {
 	background: 0 0;
-	padding-top:5px;
+	padding-top: 5px;
 	-webkit-box-shadow: none;
 	box-shadow: none
 }
+
 .w-header.transparent .logo {
-	background-image:url(../../img/style/logo.png);
+	background-image: url(../../img/style/logo.png);
 	background-size: contain;
 	background-repeat: no-repeat
 }
-@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min--moz-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {
-.w-header.transparent .logo {
-	background-image:url(../../img/style/logo.png);
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min--moz-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5) {
+	.w-header.transparent .logo {
+		background-image: url(../../img/style/logo.png);
+	}
 }
-}
+
 .w-header.transparent .login-box .btn-white {
-	border-color: #1f49ff
+	border-color: #2196f3
 }

@@ -1,185 +1,281 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
-        <meta name="renderer" content="webkit" /> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>租付通|远程预付费|物联网水电空调表|物业电子收费系统|智能大厦能源管理-古鸽公司</title>
-        <meta name="keywords" content="租付通|远程预付费|物联网水电空调表|物业电子收费系统|智能大厦能源管理">
-        <meta name="description" content="杭州古鸽信息技术有限公司，联系电话：0571-86996727 ,传真：0571-86996727 ；">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <link rel="stylesheet" type="text/css" href="css/public.css">
-        <link rel="stylesheet" type="text/css" href="css/about.css"> 
-         <link rel="stylesheet" type="text/css" href="css/footer.css">        
- <!-- 手机样式调用  -->
-<script type="text/javascript">
-            function LoadCSS(url){
-                var s = document.createElement("LINK");
-                s.rel = "stylesheet";
-                s.type = "text/css";
-                s.href = url;
-                document.getElementsByTagName("HEAD")[0].appendChild(s);
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>租付通|远程预付费|物联网水电空调表|物业电子收费系统|智能大厦能源管理-古鸽公司</title>
+    <meta name="keywords" content="租付通|远程预付费|物联网水电空调表|物业电子收费系统|智能大厦能源管理">
+    <meta name="description" content="杭州古鸽信息技术有限公司，联系电话：0571-86996727 ,传真：0571-86996727 ；">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/about/about.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script type="text/javascript">
+        // JavaScript Document
+        $(function () {
+            var ul_liwidth = $('.index_banner_m_btn li').width();
+            var ul_length = ($('.index_banner_m_btn li').length);
+            var ul_width = ((ul_liwidth + 6) * ul_length);
+            $('.index_banner_m_btn').css('width', ul_width + 'px');
+            showImg();
+            $('.main_2_1_add1 img').each(function (index, element) {
+                $(this).hover(
+                    function () {
+                        $(this).addClass('opacity');
+                    },
+                    function () {
+                        $(this).removeClass('opacity');
+                    });
+            });
+        });
+
+        function showImg() {
+            var bannerimg = $('.index_banner_m ul li');
+            var bannerbtn = $('.index_banner_m_btn li');
+            var num = 0;
+            bannerimg.eq(0).show();
+            clearInterval(showImgtime);
+            $('.index_banner_m_btn li').bind('click', function () {
+                num = $(this).index();
+                $(this).addClass('active').siblings().removeClass('active');
+                $('.index_banner_m ul li').eq($(this).index()).show('slow').siblings().hide('slow');
+            })
+            var showImgtime = setInterval(function showt() {
+                if (num > bannerimg.length - 1) {
+                    num = 0;
+                }
+                $('.index_banner_m_btn li').eq(num).addClass('active').siblings().removeClass('active');
+                $('.index_banner_m ul li').eq(num).show('slow').siblings().hide('slow');
+                num++;
+            }, 3000)
+        }
+    </script>
+    <!-- 手机样式调用  -->
+    <script type="text/javascript">
+        function LoadCSS(url) {
+            var s = document.createElement("LINK");
+            s.rel = "stylesheet";
+            s.type = "text/css";
+            s.href = url;
+            document.getElementsByTagName("HEAD")[0].appendChild(s);
+        }
+        var wd = "";
+        wd = window.screen.width;
+        var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var wh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        //alert("测试"+ww);
+        document.documentElement.style.fontSize = (ww / 120) + "px";
+        if (ww < 1600) {
+            //document.getElementById('header').style.cssText="width:96%";
+            LoadCSS("css/product_1200.css");
+        }
+        if (ww < 1200) {
+            //document.getElementById('header').style.cssText="width:96%";
+            LoadCSS("css/product_1000.css");
+            window.onload = function () {
+                document.getElementsByTagName('html')[0].style.position = 'absolute';
             }
-           var wd = "";   
-           wd= window.screen.width;
-           var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-           var wh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-         //alert("测试"+ww);
-           document.documentElement.style.fontSize = (ww / 120)+"px";
-           if(ww<1600){
-                //document.getElementById('header').style.cssText="width:96%";
-                LoadCSS("css/product_1200.css");
-            }
-            if(ww<1200){
-                //document.getElementById('header').style.cssText="width:96%";
-                LoadCSS("css/product_1000.css");
-                window.onload = function(){
-                document.getElementsByTagName('html')[0].style.position='absolute';
-                 }
-            }
-</script>
+        }
+    </script>
 
-    </head>
-    <body ondragstart="return false">
-     <link rel="stylesheet" href="css/base/base.css">
-<link rel="stylesheet" href="css/zl_style.css" type="text/css" />
+</head>
 
-<header class="w-header2 transparent">
-  <div class="container"><a class="logo" href="index.html"></a>
-    <div class="login-box"><a class=""  ><img class="telpng" src="img/style/phone.png">0571-86996727</a><a class="btn-white btn" target="_blank"  href="http://wpa.qq.com/msgrd?v=3&amp;uin=3066119618&amp;site=qq&amp;menu=yes" >在线咨询</a></div>
-    <nav class="w-navbar">
-    <a  href="index.html">首页</a>
-    <a  href="product.html" >智能仪表</a>
-    <a  href="fangan.html" >方案</a>
-    <a href="http://mall.gugecc.com" >商城</a>
-    <a  href="index.html" >租付通</a>
-    <a  href="http://kj.gugecc.com" >快缴</a>
-    <a  href="qudao.html" >渠道合作</a>
-    <a  class="curr"  href="aboutus.html" >联系我们</a>
-    </nav>
-  </div>
-</header>
-       
-   
-            <div class="clearfix">
-                <div class="map" id="map" style="width:903px; height:327px; border:1px solid gray;"></div>               
-                 <ul>
-                    <li>
-                        <img src="img/cont_007.jpg" alt="">
-                        <p>站台：德胜东路九环路口-公交车站 </p>
-                        <p>线路：69路; 69路区间; 101路; 111路; 394路; b支4路; b支4路区间 </p>
-                    </li>
-                    <li>
-                        <img src="img/cont_006.jpg" alt="">
-                        <p>地点：浙江省国家大学科技园</p>
-                    </li>
-                </ul>
-            </div>
-        
-        
-<!--foot-->
-<div class="line"></div>
-  
-        
-<div class="space"></div>
-<div class="company layout">
-    <h3 class="font-black">合作伙伴</h3>
-    <ul class="clearfix">
-        <li><img
-                src="img/aliyun.png"
-                alt="阿里云"></li>
-        <li><img
-                src="img/alipay.png"
-                alt="支付宝"></li>
-        <li><img
-                src="img/weixin.png"
-                alt="微信支付"></li>
-        <li><img
-                src="img/chinamobile.png"
-                alt="中国移动"></li>
-        <li class="last"><img
-                src="img/zhaosan.png"
-                alt="招商银行"></li>
-    </ul>
-</div>
+<body ondragstart="return false" onLoad="MblogDotccMap('浙江省国家大学科技园');">
+    <link rel="stylesheet" href="css/base/base.css">
+    <link rel="stylesheet" href="css/zl_style.css" type="text/css" />
 
-<div class="space"></div>
-
-
-
-
-<div id="newfooter">
-    <div class="layout">
-        <div class="clearfix footNav">
-            <div class="footerDl">
-                <dl >
-                    <dt><a href="index-2.html" target="_blank">古鸽信息</a></dt>
-                    <dd><a href="index-2.html" target="_blank">云平台</a></dd>
-                    <dd><a href="index.html" target="_blank">租付通</a></dd>
-                    <dd><a href="http://kj.gugecc.com/" target="_blank">快缴</a></dd>
-                </dl>
-                <dl>
-                    <dt>智能仪表</dt>
-                    <dd><a href="product.html" target="_blank">智能电表</a></dd>
-                    <dd><a href="product.html" target="_blank">智能水表</a></dd>
-                    <dd><a href="product.html" target="_blank">智能空调表</a></dd>
-                </dl>
-                <dl class="lastMargin">
-                    <dt><a href="fangan.html">解决方案</a></dt>
-                    <dd>
-                        <a href="fangan.html" target="_blank">数据安全</a>
-                    </dd>
-                    <dd><a href="fangan.html" target="_blank">资金安全</a></dd>
-                    <dd>
-                        <a href="fangan.html"
-                           target="_blank" rel="nofollow">应用案例</a></dd>
-                    <dd>    
-                </dl>
-            </div>
-
-            <div class="cantactUS">
-                <p class="title">客服专线</p>
-                <h1>0571-86996727</h1>
-                <p class="tips">（客服服务时间：9:00-18:00）</p>
-            </div>
-
-            <div class="qrcode">
-                <p class="title">关注我们</p>
-                <div><img src="img/weixi.jpg" alt="" width="100%"/></div>
-            </div>
+    <header class="w-header2 transparent" style="z-index: 999999">
+        <div class="container">
+            <a class="logo" href="index.html"></a>
+            <div class="login-box">
+                <a class=""><img class="telpng" src="img/style/phone.png">0571-86996727</a><a class="btn-white btn" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3066119618&amp;site=qq&amp;menu=yes">在线咨询</a></div>
+            <nav class="w-navbar">
+                <a href="index.html">首页</a>
+                <a href="product.html">智能仪表</a>
+                <a href="fangan.html">方案</a>
+                <a href="http://mall.gugecc.com">商城</a>
+                <a href="index.html">租付通</a>
+                <a href="kj.html">快缴</a>
+                <a href="qudao.html">渠道合作</a>
+                <a class="curr" href="aboutus.html">联系我们</a>
+            </nav>
         </div>
-
-        <div class="line"></div>
-               <div class="frindLink">
-                <div class="title">友情链接：</div>
-                <div class="link">
+    </header>
+    <div class="clearfix">
+        <div class="wrap" style="padding-top: 100px">
+            <div class="clearfix main">
+                <div class="contactborder contact002">
                     <ul>
-                        <li><a href="http://www.gugecc.com/" target="_blank" >古鸽信息</a></li>
-                        <li><a href="http://kj.gugecc.com/" target="_blank" >快缴</a></li>
-                        <li><a href="http://www.liuliangbao.cn/" target="_blank" >流量宝</a></li>
-                        <li><a href="http://www.basic.com.cn" target="_blank" >柏诚智能</a></li>
-                        <li><a href="http://www.china-yintai.com" target="_blank" >银泰城</a></li>
+                        <li>
+                            <img src="img/about/cont_002.jpg" class="img001" alt="">
+                            <p>0571-86996727</p>
+                        </li>
+                        <li>
+                            <img src="img/about/cont_003.jpg" class="img002" alt="">
+                            <p>0571-86996727</p>
+                        </li>
+                        <li style="border:0px;">
+                            <img src="img/about/cont_004.jpg" class="img003" alt="">
+                            <p>0571-86996727</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix contactborder contact003">
+                    <div class="map" id="map" style="width:903px; height:327px; border:1px solid gray;"></div>
+                    <ul>
+                        <li>
+                            <img src="img/about/cont_007.jpg" alt="">
+                            <p>站台：德胜东路九环路口-公交车站 </p>
+                            <p>线路：69路; 69路区间; 101路; 111路; 394路; b支4路; b支4路区间 </p>
+                        </li>
+                        <li>
+                            <img src="img/about/cont_006.jpg" alt="">
+                            <p>地点：浙江省国家大学科技园</p>
+                        </li>
                     </ul>
                 </div>
             </div>
-                <div class="line"></div>
-        <div class="footerText tc">
-         <div class="copyright">浙ICP备12027381号. 版权所有 杭州古鸽信息技术有限公司</div>
-           
-                <a style="margin-left:25px;" href="http://www.verisign.com/" rel="nofollow" target="_blank"><img
-                        src="img/symantec.png" alt="verisign"></a>
-                <a href="http://t.knet.cn/index_new.jsp" rel="nofollow" target="_blank"><img
-                        src="img/kexin.png" alt="可信网站"></a>
-                <a href="http://www.mps.gov.cn/n16/index.html?_v=1442896797517" rel="nofollow" target="_blank"><img
-                        src="img/gongan.png" alt="公安"></a>
-                
-            </p>
         </div>
     </div>
-</div>
 
 
-    </body>
+    <!--foot-->
+    <div class="line"></div>
+
+
+    <div class="space"></div>
+    <div class="company layout">
+        <h3 class="font-black">合作伙伴</h3>
+        <ul class="clearfix">
+            <li><img src="img/aliyun.png" alt="阿里云"></li>
+            <li><img src="img/alipay.png" alt="支付宝"></li>
+            <li><img src="img/weixin.png" alt="微信支付"></li>
+            <li><img src="img/chinamobile.png" alt="中国移动"></li>
+            <li class="last"><img src="img/zhaosan.png" alt="招商银行"></li>
+        </ul>
+    </div>
+
+    <div class="space"></div>
+
+
+
+
+    <div id="newfooter">
+        <div class="layout">
+            <div class="clearfix footNav">
+                <div class="footerDl">
+                    <dl>
+                        <dt><a href="index-2.html" target="_blank">古鸽信息</a></dt>
+                        <dd><a href="index-2.html" target="_blank">云平台</a></dd>
+                        <dd><a href="index.html" target="_blank">租付通</a></dd>
+                        <dd><a href="http://kj.gugecc.com/" target="_blank">快缴</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>智能仪表</dt>
+                        <dd><a href="product.html" target="_blank">智能电表</a></dd>
+                        <dd><a href="product.html" target="_blank">智能水表</a></dd>
+                        <dd><a href="product.html" target="_blank">智能空调表</a></dd>
+                    </dl>
+                    <dl class="lastMargin">
+                        <dt><a href="fangan.html">解决方案</a></dt>
+                        <dd>
+                            <a href="fangan.html" target="_blank">数据安全</a>
+                        </dd>
+                        <dd><a href="fangan.html" target="_blank">资金安全</a></dd>
+                        <dd>
+                            <a href="fangan.html" target="_blank" rel="nofollow">应用案例</a></dd>
+                        <dd>
+                    </dl>
+                </div>
+
+                <div class="cantactUS">
+                    <p class="title">客服专线</p>
+                    <h1>0571-86996727</h1>
+                    <p class="tips">（客服服务时间：9:00-18:00）</p>
+                </div>
+
+                <div class="qrcode">
+                    <p class="title">关注我们</p>
+                    <div><img src="img/weixi.jpg" alt="" width="100%" /></div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="frindLink">
+                <div class="title">友情链接：</div>
+                <div class="link">
+                    <ul>
+                        <li><a href="http://www.gugecc.com/" target="_blank">古鸽信息</a></li>
+                        <li><a href="http://kj.gugecc.com/" target="_blank">快缴</a></li>
+                        <li><a href="http://www.liuliangbao.cn/" target="_blank">流量宝</a></li>
+                        <li><a href="http://www.basic.com.cn" target="_blank">柏诚智能</a></li>
+                        <li><a href="http://www.china-yintai.com" target="_blank">银泰城</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="footerText tc">
+                <div class="copyright">浙ICP备12027381号. 版权所有 杭州古鸽信息技术有限公司</div>
+
+                <a style="margin-left:25px;" href="http://www.verisign.com/" rel="nofollow" target="_blank"><img src="img/symantec.png" alt="verisign"></a>
+                <a href="http://t.knet.cn/index_new.jsp" rel="nofollow" target="_blank"><img src="img/kexin.png" alt="可信网站"></a>
+                <a href="http://www.mps.gov.cn/n16/index.html?_v=1442896797517" rel="nofollow" target="_blank"><img src="img/gongan.png" alt="公安"></a>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=3690f5facff0a96fc7ff291c20f532e0&v=1.0&services=true"></script>
+<script type="text/javascript">
+    /* 
+                                                            M博客百度地图API演示：查询地图经纬度
+                                                             http://mblog.cc 
+                                                             cody@mblog.cc
+                                                            */
+    function MblogDotccMap(keyword) {
+        var map = new BMap.Map("map"); // 创建地图实例  
+        var point = new BMap.Point(113.331213, 23.143274); // 创建点坐标  
+
+        map.centerAndZoom(point, 15); // 初始化地图，设置中心点坐标和地图级别  
+
+        //添加缩放控件
+        map.addControl(new BMap.NavigationControl());
+        map.addControl(new BMap.ScaleControl());
+        map.addControl(new BMap.OverviewMapControl());
+
+        //显示地图中心地点的坐标
+        map.addEventListener("dragend", function () {
+            //map.panTo(point);
+            var center = map.getCenter();
+            //document.getElementById("info").innerHTML = "当前地图中心坐标：" + center.lng + ", " + center.lat;
+        });
+
+        //搜索
+        var local = new BMap.LocalSearch(map, {
+            renderOptions: {
+                map: map,
+                panel: "results_info"
+            }
+        });
+        //alert(local);
+        map.panBy(point);
+
+        local.search(keyword);
+
+        local.getResults()
+
+        local.setSearchCompleteCallback(function (searchResult) {
+            var poi = searchResult.getPoi(0);
+            //alert(poi.point.lng+"   "+poi.point.lat);
+            //document.getElementById("info").innerHTML = "<strong>" + keyword + "</strong>" + "坐标：" + poi.point.lng + "," + poi.point.lat;
+        });
+
+    }
+</script>
 
 </html>
