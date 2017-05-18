@@ -295,6 +295,10 @@
 			width: 100%;
 		}
 
+		.mdContainer {
+			width: 80vw;
+		}
+
 		.smContainer {
 			width: 70vw;
 		}
@@ -315,12 +319,24 @@
 			text-align: center;
 		}
 
+		.p0 {
+			padding: 0;
+		}
+
 		.p30 {
 			padding: 30px;
 		}
 
 		.p50 {
 			padding: 50px;
+		}
+
+		.pt100 {
+			padding-top: 100px;
+		}
+
+		.m0 {
+			margin: 0!important;
 		}
 
 		.mt3vh {
@@ -332,7 +348,7 @@
 		}
 
 		.mt10vh {
-			margin-top: 10vh;
+			margin-top: 10vh!important;
 		}
 
 		.pt6vh {
@@ -418,4 +434,28 @@
 
 		.bg-gray {
 			background: #f5f5f5;
+		}
+
+		.bg-gray p {
+			font-size: 1.4rem;
+			line-height: 50px;
+			color: #999;
+			margin: 5vh;
+			font-size: 1.2rem;
+			letter-spacing: 2px;
+		}
+
+		.aboutTitle {
+			font-size: 2.2rem;
+			margin: 0;
+			letter-spacing: 5.14px;
+		}
+
+		.aboutTitle-sm {
+			font-size: 1.2rem;
+			color: #999;
+		}
+
+		.float-right {
+			float: right;
 		}
