@@ -91,15 +91,6 @@
     background: url('../../img/product/product-bg7.png') no-repeat right center;
 }
 
-.bg p {
-    font-size: 1.4rem;
-    line-height: 50px;
-    color: #666;
-    margin: 5vh;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-}
-
 .bg-linear-w-b {
     background: linear-gradient(to right, #ECEEF3, #97D8FC);
 }

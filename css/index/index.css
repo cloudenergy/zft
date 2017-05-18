@@ -161,17 +161,6 @@
     padding: 0 20px 0 20px;
 }
 
-.aboutTitle {
-    font-size: 2.2rem;
-    margin: 0;
-    letter-spacing: 5.14px;
-}
-
-.aboutTitle-sm {
-    font-size: 1.2rem;
-    color: #999;
-}
-
 .dashed {
     height: 100%;
     width: 110px;

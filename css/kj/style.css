@@ -586,11 +586,11 @@ only screen and (min-device-pixel-ratio:1.5) {
   }
 }
 
-.w-navbar a.curr {
+a.curr {
   color: #1f49ff;
 }
 
-.w-header.transparent .w-navbar a.curr {
+a.curr {
   color: #1f49ff
 }
 
@@ -641,7 +641,7 @@ only screen and (min-device-pixel-ratio:1.5) {
   }
 }
 
-.w-header.transparent .w-navbar a.curr {
+a.curr {
   color: #1f49ff
 }
 

@@ -1,0 +1,41 @@
+.right-font {
+    margin-left: 400px;
+}
+
+.application-icon1 {
+    background: url('../../img/application/application-icon1.png') no-repeat 150px center;
+}
+
+.application-icon2 {
+    background: url('../../img/application/application-icon2.png') no-repeat 150px center;
+}
+
+.application-icon3 {
+    background: url('../../img/application/application-icon3.png') no-repeat 150px center;
+}
+
+.application-icon4 {
+    background: url('../../img/application/application-icon4.png') no-repeat 150px center;
+}
+
+.application-icon5 {
+    background: url('../../img/application/application-icon5.png') no-repeat 150px center;
+}
+
+.application-bg1 {
+    background: url('../../img/application/application-bg1.png') no-repeat center center;
+    height: 550px;
+    background-size: 100% 100%;
+}
+
+.application-bg2 {
+    background: url('../../img/application/application-bg2.png') no-repeat center center;
+    height: 550px;
+    background-size: 100% 100%;
+}
+
+.application-bg3 {
+    background: url('../../img/application/application-bg3.png') no-repeat center center;
+    height: 550px;
+    background-size: 100% 100%;
+}

@@ -119,7 +119,6 @@
 		}
 
 		.w-header {
-			overflow: auto;
 			position: fixed;
 			width: 93.34%;
 			z-index: 99;
@@ -193,7 +192,7 @@
 		}
 
 		.w-header.transparent .logo {
-			background-image: url(../../img/style/logo.png);
+			background-image: url('../../img/style/logo.png');
 			background-size: contain;
 			background-repeat: no-repeat
 		}
@@ -222,18 +221,18 @@
 			}
 		}
 
-		.w-navbar a.curr {
+		a.curr {
 			color: #2196f3;
 		}
 
-		.w-header.transparent .w-navbar a.curr {
-			color: #2196f3
+		.curr {
+			color: #2196f3;
 		}
 
 		.w-navbar a {
 			text-decoration: none;
 			font-size: 14px;
-			margin-left: 65px;
+			margin-left: 40px;
 			line-height: 60px;
 			padding-bottom: 0;
 			color: #333333;
@@ -277,7 +276,7 @@
 			}
 		}
 
-		.w-header.transparent .w-navbar a.curr {
+		a.curr {
 			color: #2196f3
 		}
 
@@ -329,6 +328,10 @@
 
 		.p50 {
 			padding: 50px;
+		}
+
+		.pt50 {
+			padding-top: 50px;
 		}
 
 		.pt100 {
@@ -445,10 +448,21 @@
 			letter-spacing: 2px;
 		}
 
+		.bg p {
+			font-size: 1.4rem;
+			line-height: 50px;
+			color: #666;
+			margin: 5vh;
+			font-size: 1.2rem;
+			letter-spacing: 2px;
+		}
+
 		.aboutTitle {
-			font-size: 2.2rem;
+			font-size: 3rem;
 			margin: 0;
 			letter-spacing: 5.14px;
+			font-family: FZZDHJW--GB1-0;
+			color: #4a4a4a;
 		}
 
 		.aboutTitle-sm {
@@ -458,4 +472,51 @@
 
 		.float-right {
 			float: right;
+		}
+
+		.float-left {
+			float: left;
+		}
+
+		.scheme {
+			position: relative;
+			display: inline-block;
+			margin-left: 40px;
+			text-decoration: none;
+			font-size: 14px;
+			margin-left: 40px;
+			padding-bottom: 0;
+		}
+
+		.scheme-list {
+			display: none;
+			text-align: center;
+		}
+
+		.scheme-list:hover {
+			display: block;
+		}
+
+		.scheme-list li {
+			height: 30px;
+		}
+
+		.w-navbar .scheme-list li a {
+			margin: 0;
+			height: 30px;
+			line-height: 30px!important;
+			font-size: 12px;
+		}
+
+		.scheme-list li:hover {
+			color: #2196f3;
+		}
+
+		.scheme:hover .scheme-list {
+			display: block;
+			width: 80px;
+			position: absolute;
+			top: 20px;
+			left: -24px;
+			background: #fff;
 		}
