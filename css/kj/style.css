@@ -519,7 +519,6 @@ a {
 
 .login-box .btn,
 .w-header .logo,
-.w-header2 .logo,
 .w-navbar,
 .w-navbar a {
   display: inline-block;
@@ -556,7 +555,7 @@ a {
 }
 
 .w-header.transparent .logo,
-.w-header2.transparent .logo {
+.w-header.transparent .logo {
   background-image: url(../../../img/kjLogo.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -566,7 +565,7 @@ a {
 only screen and (min--moz-device-pixel-ratio:1.5),
 only screen and (min-device-pixel-ratio:1.5) {
   .w-header.transparent .logo,
-  .w-header2.transparent .logo {
+  .w-header.transparent .logo {
     background-image: url(http://9kpu.kuaileapp.com/img/logo.png);
   }
 }

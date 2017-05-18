@@ -148,27 +148,27 @@
 
 <body>
     <link rel="stylesheet" href="css/base/base.css">
-    <link rel="stylesheet" href="css/base/comm.css">
-    <header class="w-header transparent" style="background:rgba(255,255,255,0.97);width:100%">
+    <link rel="stylesheet" href="css/zl_style.css" type="text/css" />
+
+    <header class="w-header transparent" style="background:rgba(255,255,255,0.97);width: 100%">
         <div class="container">
-            <a class="logo" href="index.html" style="background-image: url(img/kj.png);"></a>
+            <a class="logo" href="zft.html" style="background-image: url(img/kj.png);"></a>
             <div class="login-box">
                 <a class=""><img class="telpng" src="img/style/phone.png">0571-86996727</a><a class="btn-white btn" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3066119618&amp;site=qq&amp;menu=yes">在线咨询</a></div>
             <nav class="w-navbar">
-                <a href="index-2.html">首页</a>
-                <a href="product.html">智能仪表</a>
+                <a href="index.html">首页</a>
+                <a href="product.html">产品</a>
                 <a href="fangan.html">方案</a>
-                <a href="https://mall.gugecc.com/">商城</a>
-                <a href="index.html">租付通</a>
+                <a href="http://mall.gugecc.com">商城</a>
+                <a href="zft.html">租付通</a>
                 <a class="curr" href="kj.html">快缴</a>
                 <a href="qudao.html">渠道合作</a>
                 <a href="aboutus.html">联系我们</a>
             </nav>
         </div>
     </header>
+    <div class="clear"></div>
     <div class="container">
-
-
         <div class="slider-container-background">
             <div class="slider-container">
                 <div class="details">
@@ -370,8 +370,15 @@
             </div>
         </div>
     </div>
+    <script>
+        var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        console.log(ww);
+        if (ww < 1250) {
+            window.onload = function () {
+                document.getElementsByTagName('html')[0].style.position = 'absolute';
+            }
+        }
+    </script>
 </body>
-
-<!-- Mirrored from gugecc.daixiaomi.com/home by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 20 Apr 2017 02:16:04 GMT -->
 
 </html>

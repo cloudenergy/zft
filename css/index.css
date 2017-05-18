@@ -1,30 +1,35 @@
-
-.imgcss{
-    width:100%;vertical-align:top;
-}
-.topimg{
-    width:100%;position: relative;
-}
-.botoom_line{
-    width:100%;height: 5px;background: #13cfbe;
+.imgcss {
+    width: 100%;
+    vertical-align: top;
 }
 
+.topimg {
+    width: 100%;
+    position: relative;
+}
 
-.onlyimg{
-    width:100%;
+.botoom_line {
+    width: 100%;
+    height: 5px;
+    background: #13cfbe;
+}
+
+.onlyimg {
+    width: 100%;
     margin: 0 auto;
 }
 
-
-.lazy{
-   width: 100%;
+.lazy {
+    width: 100%;
     vertical-align: top;
 }
-.jianjie{
-    width:100%;
+
+.jianjie {
+    width: 100%;
     margin: 80px auto;
     padding-bottom: 20px;
 }
+
 
 /*
 .img5{
@@ -45,38 +50,161 @@
     font-size:100%;font-weight: 100;margin-top: 2em;text-align: left;color:#555;text-indent: 2em;line-height: 2.2em;
 } */
 
-
-.jieshao{
-    width:1200px;margin: 0 auto;border: 1px #bbb solid;height: 410px;
+.jieshao {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px #bbb solid;
+    height: 410px;
     background: url(../img/img_back02.jpg) repeat;
-    margin: 50px auto;margin-bottom: 100px;
+    margin: 50px auto;
+    margin-bottom: 100px;
 }
-.jieshao .content{
-    width:93%;margin:0px auto;  
-    text-align: center;left:20%;font-family: Microsoft YaHei;
+
+.jieshao .content {
+    width: 93%;
+    margin: 0px auto;
+    text-align: center;
+    left: 20%;
+    font-family: Microsoft YaHei;
 }
-.jieshao .content h1{
-    height: 85px;line-height: 85px;font-size:22px;text-align: center;
-    font-weight: 400;color:#333;
+
+.jieshao .content h1 {
+    height: 85px;
+    line-height: 85px;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 400;
+    color: #333;
 }
-.jieshao .content h2{
-    font-size:17px;font-weight: 100;margin-top: 30px;line-height: 40px;
-    text-align: left;color:#555;text-indent: 2em;
+
+.jieshao .content h2 {
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 30px;
+    line-height: 40px;
+    text-align: left;
+    color: #555;
+    text-indent: 2em;
 }
-.jieshao .content p{
+
+.jieshao .content p {
     height: 20px;
 }
-.indexgushi{
-    witdth:100%;
+
+.indexgushi {
+    witdth: 100%;
     background: #ffffff;
 }
-.indexgushi .gspic{
-    width:90%;margin:0px auto;padding-top: 65px;overflow: hidden;padding-bottom: 65px;text-align: center;
-}
-.indexgushi .gspic span{ position:relative;}
-.indexgushi .gspic a{ position:absolute; right:0px; bottom:30px; width:200px; height:50px; display:block;}
-.indexgushi .gspic img{
-    width:100%;max-width: 1320px;max-height: 832px;
+
+.indexgushi .gspic {
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 65px;
+    overflow: hidden;
+    padding-bottom: 65px;
+    text-align: center;
 }
 
+.indexgushi .gspic span {
+    position: relative;
+}
 
+.indexgushi .gspic a {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    width: 200px;
+    height: 50px;
+    display: block;
+}
+
+.indexgushi .gspic img {
+    width: 100%;
+    max-width: 1320px;
+    max-height: 832px;
+}
+
+.details h1 {
+    font-family: STHeiti;
+    font-size: 2rem;
+    color: #6e6e6e;
+    letter-spacing: 4.28px;
+}
+
+.details p {
+    font-family: STXihei;
+    font-size: 1.2rem;
+    color: #999;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+
+.index-bg {
+    background: url('../img/index/index-bg.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.timeline {
+    margin: 0 auto;
+    height: 30px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.timeFont {
+    display: inline-block;
+    color: #999;
+    font-size: 1rem;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px 0 20px;
+}
+
+.timeline-bg {
+    display: inline-block;
+    background: url('../img/index/timeline-bg.png') 0 0 no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.aboutTitle {
+    font-size: 2.2rem;
+    margin: 0;
+    letter-spacing: 5.14px;
+}
+
+.aboutTitle-sm {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.dashed {
+    height: 100%;
+    width: 112px;
+    margin: 0;
+    border-right: 1px dashed #74A3E9;
+}
+
+.w59vw {
+    width: 59vw;
+}
+
+.bg-gray {
+    background: #f5f5f5;
+}
+
+.bg-gray p {
+    font-size: 1.2rem;
+    line-height: 50px;
+    color: #999;
+    margin: 5vh;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.ggicon {
+    width: 100%;
+    height: 100px;
+    padding: 30px 0 30px 0;
+    background: url('../img/index/logo.png') no-repeat center center;
+}

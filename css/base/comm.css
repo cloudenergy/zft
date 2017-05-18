@@ -64,7 +64,6 @@ only screen and (min-device-pixel-ratio:1.5) {
 }*/
 
 .w-header.transparent {
-	background: 0 0;
 	padding-top: 5px;
 	-webkit-box-shadow: none;
 	box-shadow: none
