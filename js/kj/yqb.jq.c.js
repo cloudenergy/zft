@@ -11,18 +11,18 @@ String.prototype.trim = function () {
     return this.replace(/(^\s*)|(\s*$)/g, '');
 };
 String.prototype.attrRetrievalMode = function () {
-    return "[" + this + "]";
+    return"[" + this +"]";
 };
 String.prototype.keepDigital = function () {
-    return this.replace(/\D/g, "");
+    return this.replace(/\D/g,"");
 };
 String.prototype.keepDecimal = function () {
     var str;
-    str = this.replace(/[^\d\.]*/g, "");
+    str = this.replace(/[^\d\.]*/g,"");
     var reg = /^\.\d+/g;
     var reg2 = /\./g;
     if (reg.test(str))
-        return parseFloat(str.replace(/\./, "0."))
+        return parseFloat(str.replace(/\./,"0."))
     return parseFloat(str);
 };
 
@@ -37,7 +37,7 @@ window.txt2html = function (txt) {
     txt_list = txt.split('\n');
     html = '';
     for (_i = 0, _len = txt_list.length; _i < _len; _i++)
-        html += "<p>" + txt_list[_i] + "</p>";
+        html +="<p>" + txt_list[_i] +"</p>";
     return html;
 };
 
@@ -95,18 +95,18 @@ $.YQB.Ajax = {
 
 (function () {
     var weChat = $.YQB.weChat = $.YQB.weChat || {};
-    weChat.weChatConf = "";
+    weChat.weChatConf ="";
     weChat.regWeChatConf = function (X_CSRFToken, jsApiList,regSuccessCallback) {
         //if (!$.YQB.BROWSER.isWeChat) return 0;
         var weChatConf = weChat.weChatConf;
         var url = $.YQB.Ajax.weChat.url,
            _data = $.extend(true, {}, $.YQB.Ajax.weChat.baseData || {}),
             csrf_token = X_CSRFToken,
-            dataType = "json";
+            dataType ="json";
 
         _data.url = location.href;
         $.ajax({
-            type: "POST",
+            type:"POST",
             dataType: dataType,
             url: url,
             data: _data,
@@ -137,18 +137,18 @@ $.YQB.dataSet = $.YQB.dataSet || {};
         //if (!(data1 && data2)) return false;
         for (var K in data1)
             data1[K] = data2[K] == 0 || data2[K] === false ? data2[K] :
-                       data2[K] ? data2[K] : "";
+                       data2[K] ? data2[K] :"";
             return data1;
     }
 
     $dataSet.Model = {
         user: {
-            id: "",
-            access_token: "",
-            defaultpart: ""
+            id:"",
+            access_token:"",
+            defaultpart:""
         },
-        projectDetails: "",
-        projectBasicInformation: ""
+        projectDetails:"",
+        projectBasicInformation:""
     };
     $dataSet.operation = {
         setUser: function (userData) {
@@ -166,24 +166,24 @@ $.YQB.dataSet = $.YQB.dataSet || {};
         reg = /(\d+)\./;
         href = location.href;
         matchStr = href.match(reg);
-        comid = matchStr ? matchStr[1] : "";
-        return comid || "";
+        comid = matchStr ? matchStr[1] :"";
+        return comid ||"";
     }
 
     $.YQB.url = {
         getQueryString: function (name) {
-            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var reg = new RegExp("(^|&)" + name +"=([^&]*)(&|$)","i");
             var r = window.location.search.substr(1).match(reg);
-            if (r != null) return unescape(r[2]); return "";
+            if (r != null) return unescape(r[2]); return"";
         },
         getSource: function () {
             return unescape(this.getQueryString("source"));
         },
         getComid: function () {
-            return this.getQueryString("comid") || "";
+            return this.getQueryString("comid") ||"";
         },
         getUserId: function () {
-            return this.getQueryString("userid") || "";
+            return this.getQueryString("userid") ||"";
         },
         getPageNum: function () {
             var num = parseInt(this.getQueryString("page"));
@@ -191,7 +191,7 @@ $.YQB.dataSet = $.YQB.dataSet || {};
         },
         getDetailsPageDomainURL: function () {
             var domain = location.host.match(/.+\.(.+\.[a-zA-Z0-9]+)/);
-            return domain ? location.protocol+"//" + domain[0] : "";
+            return domain ? location.protocol+"//" + domain[0] :"";
         },
         addedSouceUrl: function (str) {
             return str + escape(location.href);
@@ -233,7 +233,7 @@ $.fn.keyCode_enter_bind = function (fn) {
     $(this).keydown(function (e) {
         var enter = 13;
         if (e.keyCode == enter) {
-            if (typeof fn == "function")
+            if (typeof fn =="function")
                 fn();
             $(this).blur();
         }
@@ -243,7 +243,7 @@ $.fn.keyCode_enter_bind = function (fn) {
 
 $.fn.input_text_autocomplete = function (turn_on) {
     if ($(this).attr("autocomplete")) return 0;
-    var auto = turn_on ? "on" : "off";
+    var auto = turn_on ?"on" :"off";
     $(this).attr("autocomplete", auto);
 };
 
@@ -272,7 +272,7 @@ $.fn.justNumber = function (Decimal) {
 };
 
 $.fn.ReplacedVSHalfWidthSymbols = function (onlyText) {
-    var htm = $(this).html().replace(/，/g, ", ").replace(/：/g, ": ").replace(/；/g, "; ");
+    var htm = $(this).html().replace(/，/g,",").replace(/：/g,":").replace(/；/g,";");
     $(this).html(htm);
 };
 
@@ -312,7 +312,7 @@ $.YQB.Utilities.changeTitleTxt = function (str) {
 $.YQB.Utilities.dialogueConfirm = function () {
     $("[data-confirm-dialogue]").click(function () {
         if (confirm($(this).attr("data-confirm-dialogue"))) {
-            $(this).attr("data-confirm-donot-redirect", "");
+            $(this).attr("data-confirm-donot-redirect","");
             return true;
         } else
             $(this).attr("data-confirm-donot-redirect", true);
@@ -327,8 +327,8 @@ $.YQB.Utilities.dialogueConfirm = function () {
   **********************/
 ;(function () {
     var className = {
-        container: ".slider-container",
-        list: ".slider-container > ul",
+        container:".slider-container",
+        list:".slider-container > ul",
     };
     var defaultConfig = {
         toRight: false,
@@ -385,7 +385,7 @@ $.YQB.Utilities.dialogueConfirm = function () {
 
 $.YQB.notificationInit = function () {
     var className = {
-        bar: ".notification"
+        bar:".notification"
     }
     var $bar, $close;
     $bar = $(className.bar);
@@ -427,10 +427,10 @@ $.YQB.notificationInit = function () {
         });
 
         var arr = [
-            ".head .options",
-            ".head .options span",
-            ".head .options .hidden-menu",
-            ".head .options .hidden-menu li"
+           ".head .options",
+           ".head .options span",
+           ".head .options .hidden-menu",
+           ".head .options .hidden-menu li"
         ];
 
         $.documentClick(arr, function () {
@@ -447,7 +447,7 @@ $.YQB.notificationInit = function () {
                 _target = $(this).attr("data-target");
         if (!href || isRedirect) return 0;
         if (test_mode_href) href = test_mode_href;
-        if (_target == "_blank") window.open(href);
+        if (_target =="_blank") window.open(href);
         else location.href = href;
     };
 

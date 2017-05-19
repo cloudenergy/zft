@@ -58,17 +58,17 @@
     <script type="text/javascript">
         function LoadCSS(url) {
             var s = document.createElement("LINK");
-            s.rel = "stylesheet";
-            s.type = "text/css";
+            s.rel ="stylesheet";
+            s.type ="text/css";
             s.href = url;
             document.getElementsByTagName("HEAD")[0].appendChild(s);
         }
-        var wd = "";
+        var wd ="";
         wd = window.screen.width;
         var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var wh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         //alert("测试"+ww);
-        document.documentElement.style.fontSize = (ww / 120) + "px";
+        document.documentElement.style.fontSize = (ww / 120) +"px";
         if (ww < 1600) {
             //document.getElementById('header').style.cssText="width:96%";
             LoadCSS("css/product_1200.css");
@@ -259,14 +259,14 @@
         map.addEventListener("dragend", function () {
             //map.panTo(point);
             var center = map.getCenter();
-            //document.getElementById("info").innerHTML = "当前地图中心坐标：" + center.lng + ", " + center.lat;
+            //document.getElementById("info").innerHTML ="当前地图中心坐标：" + center.lng +"," + center.lat;
         });
 
         //搜索
         var local = new BMap.LocalSearch(map, {
             renderOptions: {
                 map: map,
-                panel: "results_info"
+                panel:"results_info"
             }
         });
         //alert(local);
@@ -278,8 +278,8 @@
 
         local.setSearchCompleteCallback(function (searchResult) {
             var poi = searchResult.getPoi(0);
-            //alert(poi.point.lng+"   "+poi.point.lat);
-            //document.getElementById("info").innerHTML = "<strong>" + keyword + "</strong>" + "坐标：" + poi.point.lng + "," + poi.point.lat;
+            //alert(poi.point.lng+"  "+poi.point.lat);
+            //document.getElementById("info").innerHTML ="<strong>" + keyword +"</strong>" +"坐标：" + poi.point.lng +"," + poi.point.lat;
         });
 
     }

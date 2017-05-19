@@ -1,0 +1,87 @@
+.rgcom_cen h1,
+.sj_box h1 {
+    font-size: 30px;
+}
+
+.focus .right li:hover h3,
+.focus .right li.active h1 {
+    color: #0085e1;
+}
+
+.app1 {
+    background: url('../../img/zft/app1.png') no-repeat right center;
+    height: 131px;
+}
+
+.active .app1 {
+    background: url('../../img/zft/app11.png') no-repeat right center;
+    height: 131px;
+}
+
+.app2 {
+    background: url('../../img/zft/app2.png') no-repeat right center;
+    height: 131px;
+}
+
+.active .app2 {
+    background: url('../../img/zft/app22.png') no-repeat right center;
+    height: 131px;
+}
+
+.app3 {
+    background: url('../../img/zft/app3.png') no-repeat right center;
+    height: 131px;
+}
+
+.active .app3 {
+    background: url('../../img/zft/app33.png') no-repeat right center;
+    height: 131px;
+}
+
+.app4 {
+    background: url('../../img/zft/app4.png') no-repeat right center;
+    height: 131px;
+}
+
+.active .app4 {
+    background: url('../../img/zft/app44.png') no-repeat right center;
+    height: 131px;
+}
+
+.app5 {
+    background: url('../../img/zft/app5.png') no-repeat right center;
+    height: 131px;
+}
+
+.active .app5 {
+    background: url('../../img/zft/app55.png') no-repeat right center;
+    height: 131px;
+}
+
+.focus .right {
+    width: 500px;
+}
+
+.greenTitle {
+    font-family: FZZDHJW--GB1-0;
+    letter-spacing: 9.14px;
+    color: #68E51D;
+    font-size: 5rem;
+    margin-left: 5vh;
+}
+
+.zft-bg1 {
+    background: url('../../img/zft/zft-bg1.png') no-repeat right center;
+}
+
+.zft-bg2 {
+    background: url('../../img/zft/zft-bg2.png') no-repeat left center;
+}
+
+.zft-bg3 {
+    background: url('../../img/zft/zft-bg3.png') no-repeat right center;
+}
+
+.zft-bg4 {
+    background: url('../../img/zft/zft-bg4.png') no-repeat left center;
+}

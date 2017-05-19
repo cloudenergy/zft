@@ -64,14 +64,14 @@
 
 		@-webkit-keyframes opacity {
 			0% {
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 				filter: alpha(opacity=30);
 				-moz-opacity: .3;
 				-khtml-opacity: .3;
 				opacity: .3
 			}
 			to {
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 				filter: alpha(opacity=100);
 				-moz-opacity: 1;
 				-khtml-opacity: 1;
@@ -81,14 +81,14 @@
 
 		@keyframes opacity {
 			0% {
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 				filter: alpha(opacity=30);
 				-moz-opacity: .3;
 				-khtml-opacity: .3;
 				opacity: .3
 			}
 			to {
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 				filter: alpha(opacity=100);
 				-moz-opacity: 1;
 				-khtml-opacity: 1;
@@ -346,6 +346,10 @@
 			margin: 0!important;
 		}
 
+		.mt-15 {
+			margin-top: -15px;
+		}
+
 		.mt3vh {
 			margin-top: 3vh;
 		}
@@ -434,7 +438,7 @@
 			padding: 0;
 			color: #333;
 			font-size: 14px;
-			font-family: tahoma, arial, Hiragino Sans GB, "Microsoft Yahei", NSimSun, SimSun;
+			font-family: tahoma, arial, Hiragino Sans GB,"Microsoft Yahei", NSimSun, SimSun;
 			font-style: inherit;
 			font-weight: inherit;
 		}

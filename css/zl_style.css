@@ -1,4 +1,4 @@
-@charset "gb2312";
+@charset"gb2312";
 
 /* CSS Document */
 
@@ -16,7 +16,7 @@ dd {
 }
 
 body {
-	font-family: "Microsoft YaHei";
+	font-family:"Microsoft YaHei";
 	margin: 0 auto;
 	padding: 0;
 }

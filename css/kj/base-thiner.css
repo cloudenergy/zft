@@ -69,7 +69,7 @@ td {
   padding: 0;
   color: #333;
   font-size: 14px;
-  font-family: tahoma, arial, Hiragino Sans GB, "Microsoft Yahei", NSimSun, SimSun;
+  font-family: tahoma, arial, Hiragino Sans GB,"Microsoft Yahei", NSimSun, SimSun;
   font-style: inherit;
   font-weight: inherit;
 }
@@ -255,7 +255,7 @@ hr {
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-family:"Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   margin-top: 6px;
   border-radius: 100%;
   background: rgba(255, 255, 255, .15);
@@ -411,29 +411,29 @@ a.btn {
 }
 
 .vector-icons.arrow-right-thiner::before {
-  content: "";
+  content:"";
 }
 
 .vector-icons.arrow-up-right::before {
-  content: "";
+  content:"";
 }
 
 .vector-icons.personal-center::before {
-  content: "";
+  content:"";
 }
 
 .vector-icons.eye::before {
-  content: "";
+  content:"";
 }
 
 .vector-icons.telphone::before {
-  content: "";
+  content:"";
 }
 
 .vector-icons.location::before {
-  content: "";
+  content:"";
 }
 
 .vector-icons.mail::before {
-  content: "";
+  content:"";
 }

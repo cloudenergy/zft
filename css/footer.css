@@ -308,7 +308,7 @@ a {
     display: block;
 }
 .clearfix:after {
-    content: ".";
+    content:".";
     display: block;
     height: 0;
     clear: both;
