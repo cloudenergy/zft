@@ -451,7 +451,6 @@ div.main_2_1_add1_img2 {
 
 .contact002 {
     margin-bottom: 20px;
-    background: #f6f6f6;
 }
 
 .contact002 ul {}
@@ -461,7 +460,7 @@ div.main_2_1_add1_img2 {
     float: left;
     width: 288px;
     text-align: center;
-    border-right: 1px solid #97BCEF;
+    border-right: 1px solid #ccc;
 }
 
 .contact002 ul li p {
@@ -481,7 +480,6 @@ div.main_2_1_add1_img2 {
 
 .contact003 {
     margin-bottom: 60px;
-    background: #f6f6f6;
 }
 
 .contact003 .map {

@@ -221,11 +221,7 @@
 			}
 		}
 
-		a.curr {
-			color: #2196f3;
-		}
-
-		.curr {
+		.w-header.transparent .w-navbar a.curr {
 			color: #2196f3;
 		}
 
@@ -276,10 +272,6 @@
 			}
 		}
 
-		a.curr {
-			color: #2196f3
-		}
-
 		.w-header.transparent .w-navbar a:hover {
 			color: #2196f3
 		}
@@ -294,12 +286,8 @@
 			width: 100%;
 		}
 
-		.mdContainer {
-			width: 80vw;
-		}
-
 		.smContainer {
-			width: 70vw;
+			width: 1200px;
 		}
 
 		.xsContainer {
@@ -504,6 +492,7 @@
 
 		.scheme-list li {
 			height: 30px;
+			width: 100%;
 		}
 
 		.w-navbar .scheme-list li a {
@@ -554,8 +543,8 @@
 			width: 1000px;
 		}
 
-		.w252 {
-			width: 252px;
+		.w300 {
+			width: 300px;
 		}
 
 		.pt180 {

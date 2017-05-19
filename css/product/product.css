@@ -29,12 +29,12 @@
 
 .phoneicon {
     background: url('../../img/product/phoneicon.png') no-repeat 10px center;
-    padding-left: 85px;
+    padding-left: 85px!important;
 }
 
 .phonehand {
     background: url('../../img/product/phonehand.png') no-repeat left center;
-    padding-left: 85px;
+    padding-left: 85px!important;
 }
 
 .producthouse {
