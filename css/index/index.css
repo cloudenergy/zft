@@ -126,7 +126,7 @@
 
 .details h1 {
     font-family: STHeiti;
-    font-size: 2rem;
+    font-size: 26px;
     color: #6e6e6e;
     margin-bottom: 20px;
     letter-spacing: 4.28px;
@@ -134,7 +134,7 @@
 
 .details p {
     font-family: STXihei;
-    font-size: 1.5rem;
+    font-size: 14px;
     color: #999;
     line-height: 50px;
     letter-spacing: 1px;

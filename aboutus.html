@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/about/about.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/base/comm.js"></script>
     <script type="text/javascript">
         // JavaScript Document
@@ -58,17 +58,17 @@
     <script type="text/javascript">
         function LoadCSS(url) {
             var s = document.createElement("LINK");
-            s.rel ="stylesheet";
-            s.type ="text/css";
+            s.rel = "stylesheet";
+            s.type = "text/css";
             s.href = url;
             document.getElementsByTagName("HEAD")[0].appendChild(s);
         }
-        var wd ="";
+        var wd = "";
         wd = window.screen.width;
         var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var wh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         //alert("测试"+ww);
-        document.documentElement.style.fontSize = (ww / 120) +"px";
+        document.documentElement.style.fontSize = (ww / 120) + "px";
         if (ww < 1600) {
             //document.getElementById('header').style.cssText="width:96%";
             LoadCSS("css/product_1200.css");
@@ -240,10 +240,10 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=3690f5facff0a96fc7ff291c20f532e0&v=1.0&services=true"></script>
 <script type="text/javascript">
     /* 
-                                                                                                                                M博客百度地图API演示：查询地图经纬度
-                                                                                                                                 http://mblog.cc 
-                                                                                                                                 cody@mblog.cc
-                                                                                                                                */
+                                                                                                                                    M博客百度地图API演示：查询地图经纬度
+                                                                                                                                     http://mblog.cc 
+                                                                                                                                     cody@mblog.cc
+                                                                                                                                    */
     function MblogDotccMap(keyword) {
         var map = new BMap.Map("map"); // 创建地图实例  
         var point = new BMap.Point(113.331213, 23.143274); // 创建点坐标  
@@ -266,7 +266,7 @@
         var local = new BMap.LocalSearch(map, {
             renderOptions: {
                 map: map,
-                panel:"results_info"
+                panel: "results_info"
             }
         });
         //alert(local);

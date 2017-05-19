@@ -64,14 +64,14 @@
 
 		@-webkit-keyframes opacity {
 			0% {
-				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 				filter: alpha(opacity=30);
 				-moz-opacity: .3;
 				-khtml-opacity: .3;
 				opacity: .3
 			}
 			to {
-				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 				filter: alpha(opacity=100);
 				-moz-opacity: 1;
 				-khtml-opacity: 1;
@@ -81,14 +81,14 @@
 
 		@keyframes opacity {
 			0% {
-				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 				filter: alpha(opacity=30);
 				-moz-opacity: .3;
 				-khtml-opacity: .3;
 				opacity: .3
 			}
 			to {
-				-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 				filter: alpha(opacity=100);
 				-moz-opacity: 1;
 				-khtml-opacity: 1;
@@ -438,7 +438,7 @@
 			padding: 0;
 			color: #333;
 			font-size: 14px;
-			font-family: tahoma, arial, Hiragino Sans GB,"Microsoft Yahei", NSimSun, SimSun;
+			font-family: tahoma, arial, Hiragino Sans GB, "Microsoft Yahei", NSimSun, SimSun;
 			font-style: inherit;
 			font-weight: inherit;
 		}
@@ -448,23 +448,22 @@
 		}
 
 		.bg-gray p {
-			font-size: 1.5rem;
+			font-size: 14px;
 			line-height: 50px;
 			color: #999;
-			margin: 5vh;
+			margin: 14px;
 			letter-spacing: 2px;
 		}
 
 		.bg p {
-			font-size: 1.5rem;
+			font-size: 14px;
 			line-height: 50px;
 			color: #666;
-			margin: 5vh;
 			letter-spacing: 2px;
 		}
 
 		.aboutTitle {
-			font-size: 3rem;
+			font-size: 30px;
 			margin: 0;
 			letter-spacing: 5.14px;
 			font-family: FZZDHJW--GB1-0;
@@ -525,4 +524,20 @@
 			top: 20px;
 			left: -24px;
 			background: #fff;
+		}
+
+		.w-header.transparent .w-navbar a.cuur {
+			color: #2196f3;
+		}
+
+		.text-left {
+			text-align: left;
+		}
+
+		.right-font {
+			margin-left: 400px;
+		}
+
+		.ml800 {
+			margin-left: 800px;
 		}

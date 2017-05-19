@@ -9,23 +9,23 @@
     <meta name="description" content="利用智能电表，智能水表替换传统IC卡电表，IC卡水表为远程预付费电表，预付费水表，解决青年公寓、白领公寓、银泰、万达、万象城等商业综合体远程抄表；水电费网上缴费，物业费管理，达到节能目标">
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/base/comm.js"></script>
     <!-- 手机样式调用  -->
     <script type="text/javascript">
         function LoadCSS(url) {
             var s = document.createElement("LINK");
-            s.rel ="stylesheet";
-            s.type ="text/css";
+            s.rel = "stylesheet";
+            s.type = "text/css";
             s.href = url;
             document.getElementsByTagName("HEAD")[0].appendChild(s);
         }
-        var wd ="";
+        var wd = "";
         wd = window.screen.width;
         var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var wh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         //alert("测试"+ww);
-        document.documentElement.style.fontSize = (ww / 120) +"px";
+        document.documentElement.style.fontSize = (ww / 120) + "px";
         if (ww < 1600) {
             //document.getElementById('header').style.cssText="width:96%";
             LoadCSS("css/product_1200.css");

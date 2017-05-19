@@ -11,23 +11,23 @@
     <link rel="stylesheet" type="text/css" href="css/cpxq.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/product/product.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/base/comm.js"></script>
     <!-- 手机样式调用  -->
     <script type="text/javascript">
         function LoadCSS(url) {
             var s = document.createElement("LINK");
-            s.rel ="stylesheet";
-            s.type ="text/css";
+            s.rel = "stylesheet";
+            s.type = "text/css";
             s.href = url;
             document.getElementsByTagName("HEAD")[0].appendChild(s);
         }
-        var wd ="";
+        var wd = "";
         wd = window.screen.width;
         var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var wh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         //alert("测试"+ww);
-        document.documentElement.style.fontSize = (ww / 120) +"px";
+        document.documentElement.style.fontSize = (ww / 120) + "px";
         if (ww < 1600) {
             //document.getElementById('header').style.cssText="width:96%";
             LoadCSS("css/product_1200.css");

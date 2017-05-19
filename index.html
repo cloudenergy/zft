@@ -27,17 +27,17 @@
     <script type="text/javascript">
         function LoadCSS(url) {
             var s = document.createElement("LINK");
-            s.rel ="stylesheet";
-            s.type ="text/css";
+            s.rel = "stylesheet";
+            s.type = "text/css";
             s.href = url;
             document.getElementsByTagName("HEAD")[0].appendChild(s);
         }
-        var wd ="";
+        var wd = "";
         wd = window.screen.width;
         var ww = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var wh = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
         //alert("测试"+ww);
-        document.documentElement.style.fontSize = (ww / 120) +"px";
+        document.documentElement.style.fontSize = (ww / 120) + "px";
         if (ww < 1600) {
             //document.getElementById('header').style.cssText="width:96%";
             LoadCSS("css/product_1200.css");
@@ -114,7 +114,7 @@
         <div class="smContainer m-0-a text-center">
             <h1 class="aboutTitle">关于我们</h1>
             <p class="aboutTitle-sm">About us</p>
-            <div class="xsContainer inline-block details p30" style="border-right: 1px solid #97BCEF;">
+            <div class="inline-block details p50 text-left" style="border-right: 1px solid #97BCEF;">
                 <h1>我们是谁</h1>
                 <p>
                     <nobr>以智能仪表技术、互联网、</nobr>
@@ -129,14 +129,14 @@
                     <nobr>管理模式的高新技术企业。</nobr>
                 </p>
             </div>
-            <div class="xsContainer inline-block details p30" style="border-right: 1px solid #97BCEF;">
+            <div class="inline-block details p50 text-left" style="border-right: 1px solid #97BCEF;">
                 <h1>我们的愿景</h1>
                 <p>让能源管理更方便</p>
                 <p>让物业收费更简单</p>
                 <p>降低物业运营成本</p>
                 <p>提升物业服务品质</p>
             </div>
-            <div class="xsContainer inline-block details p30">
+            <div class="inline-block details p50 text-left">
                 <h1>我们的优势</h1>
                 <p>丰富的行业经验，</p>
                 <p>高超的互联网技术，</p>
@@ -148,17 +148,17 @@
 
     <div class="container mt10vh">
         <div class="m-0-a text-center w59vw">
-            <div class="xsContainer inline-block details p30">
+            <div class="xsContainer inline-block details text-center">
                 <div><img src="img/index/index_1.png" alt=""></div>
                 <p>智慧云能源软件著作权</p>
             </div>
-            <div class="xsContainer inline-block details">
+            <div class="xsContainer inline-block details text-center">
                 <div><img src="img/index/index_2.png" alt=""></div>
                 <p>
                     <nobr>云上贵州大数据竞赛一等奖</nobr>
                 </p>
             </div>
-            <div class="xsContainer inline-block details">
+            <div class="xsContainer inline-block details text-center">
                 <div><img src="img/index/index_3.png" alt=""></div>
                 <p>G20节能优秀合作伙伴</p>
             </div>
