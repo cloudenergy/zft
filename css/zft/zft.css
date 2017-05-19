@@ -85,3 +85,41 @@
 .zft-bg4 {
     background: url('../../img/zft/zft-bg4.png') no-repeat left center;
 }
+
+.zft-icon1 {
+    background: url('../../img/zft/zft-icon1.png') no-repeat 35px center;
+    width: 100%;
+    height: 150px;
+}
+
+.zft-icon2 {
+    background: url('../../img/zft/zft-icon2.png') no-repeat 35px center;
+    width: 100%;
+    height: 150px;
+}
+
+.zft-icon3 {
+    background: url('../../img/zft/zft-icon3.png') no-repeat 35px center;
+    width: 100%;
+    height: 150px;
+}
+
+.zft-icon4 {
+    background: url('../../img/zft/zft-icon4.png') no-repeat 35px center;
+    width: 100%;
+    height: 150px;
+}
+
+.zftTitle {
+    color: #666!important;
+    letter-spacing: 5px;
+}
+
+.w300 p {
+    margin-left: 0!important;
+    line-height: 12px!important;
+}
+
+.ml70 {
+    margin-left: 70px!important;
+}

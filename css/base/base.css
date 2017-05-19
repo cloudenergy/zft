@@ -133,7 +133,7 @@
 			width: 111px;
 			height: 27px;
 			margin-top: 16px;
-			background-image: url(../../img/style/logo.png);
+			background-image: url('../../img/index/logo.png');
 			background-repeat: no-repeat;
 			background-size: contain
 		}
@@ -192,7 +192,7 @@
 		}
 
 		.w-header.transparent .logo {
-			background-image: url('../../img/style/logo.png');
+			background-image: url('../../img/index/logo.png');
 			background-size: contain;
 			background-repeat: no-repeat
 		}
@@ -437,7 +437,7 @@
 
 		.bg-gray p {
 			font-size: 14px;
-			line-height: 24px;
+			line-height: 28px;
 			color: #999;
 			margin: 14px;
 			letter-spacing: 2px;
@@ -445,8 +445,9 @@
 
 		.bg p {
 			font-size: 14px;
-			line-height: 24px;
-			color: #666;
+			line-height: 28px;
+			color: #999;
+			margin: 14px;
 			letter-spacing: 2px;
 		}
 
@@ -555,6 +556,10 @@
 			padding-bottom: 50px;
 		}
 
+		.pb20 {
+			padding-bottom: 20px;
+		}
+
 		.h300 {
 			height: 300px;
 		}
@@ -565,4 +570,8 @@
 
 		.ml40 {
 			margin-left: 40px;
+		}
+
+		.w-header .container .w-navbar .scheme.curr {
+			color: #2196f3;
 		}
