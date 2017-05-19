@@ -39,7 +39,7 @@
 .main_1_box ul li p {
     text-align: left;
     color: #595757;
-    font-family:"寰蒋闆呴粦";
+    font-family: "寰蒋闆呴粦";
     font-size: 14px;
     line-height: 24px;
 }
@@ -182,7 +182,7 @@ div.main_2_1_add1_img2 {
     overflow: hidden;
     border: 1px solid #c7c7c7;
     padding: 20px 20px;
-    font-family:"寰蒋闆呴粦";
+    font-family: "寰蒋闆呴粦";
     font-size: 14px;
 }
 
@@ -434,7 +434,6 @@ div.main_2_1_add1_img2 {
 }
 
 .contactborder {
-    border: 1px solid #aaaaaa;
     border-radius: 12px;
     padding: 20px;
 }
@@ -462,7 +461,7 @@ div.main_2_1_add1_img2 {
     float: left;
     width: 288px;
     text-align: center;
-    border-right: 1px solid #b5b5b6;
+    border-right: 1px solid #97BCEF;
 }
 
 .contact002 ul li p {
@@ -624,7 +623,7 @@ table {
     visibility: hidden;
     display: block;
     font-size: 0;
-    content:"";
+    content: "";
     clear: both;
     height: 0;
 }
@@ -650,7 +649,7 @@ table {
 .wrap {
     width: 100%;
     background: #f8f8f8;
-    font-family:"寰蒋闆呴粦";
+    font-family: "寰蒋闆呴粦";
 }
 
 .header {
@@ -658,7 +657,7 @@ table {
     width: 100%;
     height: 150px;
     background: #f8f8f8;
-    font-family:"寰蒋闆呴粦";
+    font-family: "寰蒋闆呴粦";
 }
 
 .head {
@@ -761,7 +760,7 @@ table {
     width: 100%;
     background: #55a0e1;
     padding: 40px 0;
-    font-family:"寰蒋闆呴粦";
+    font-family: "寰蒋闆呴粦";
 }
 
 .footer .foot {

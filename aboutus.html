@@ -111,27 +111,40 @@
         </div>
     </header>
     <div class="clearfix"></div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/contact/contact-banner.png" style="width: 100%" data-src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container pt50 bg-gray">
+        <h1 class="aboutTitle text-center pb50">联系我们</h1>
+    </div>
     <div class="wrap">
         <div class="clearfix main">
             <div class="contactborder contact002">
                 <ul>
                     <li>
-                        <img src="img/about/cont_002.jpg" class="img001" alt="">
-                        <p>0571-86996727</p>
+                        <img src="img/contact/icon1.png" class="img001" alt="">
+                        <p style="font-size: 14px;">业务咨询</p>
+                        <p style="font-size: 14px;">0571-86996727</p>
                     </li>
                     <li>
-                        <img src="img/about/cont_003.jpg" class="img002" alt="">
-                        <p>0571-86996727</p>
+                        <img src="img/contact/icon2.png" class="img002" alt="">
+                        <p style="font-size: 14px;">加盟代理</p>
+                        <p style="font-size: 14px;">0571-86996727</p>
                     </li>
                     <li style="border:0px;">
-                        <img src="img/about/cont_004.jpg" class="img003" alt="">
-                        <p>0571-86996727</p>
+                        <img src="img/contact/icon3.png" class="img003" alt="">
+                        <p style="font-size: 14px;">技术支持</p>
+                        <p style="font-size: 14px;">0571-86996727</p>
                     </li>
                 </ul>
             </div>
             <div class="clearfix contactborder contact003">
                 <div class="map" id="map" style="width:903px; height:327px; border:1px solid gray;"></div>
-                <ul>
+                <ul class="ml40">
                     <li>
                         <img src="img/about/cont_007.jpg" alt="">
                         <p>站台：德胜东路九环路口-公交车站 </p>
@@ -139,7 +152,7 @@
                     </li>
                     <li>
                         <img src="img/about/cont_006.jpg" alt="">
-                        <p>地点：浙江省国家大学科技园</p>
+                        <p style="line-height: 56px;">地点：浙江省国家大学科技园</p>
                     </li>
                 </ul>
             </div>
@@ -240,10 +253,10 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=3690f5facff0a96fc7ff291c20f532e0&v=1.0&services=true"></script>
 <script type="text/javascript">
     /* 
-                                                                                                                                            M博客百度地图API演示：查询地图经纬度
-                                                                                                                                             http://mblog.cc 
-                                                                                                                                             cody@mblog.cc
-                                                                                                                                            */
+                                                                                                                                                                                                            M博客百度地图API演示：查询地图经纬度
+                                                                                                                                                                                                             http://mblog.cc 
+                                                                                                                                                                                                             cody@mblog.cc
+                                                                                                                                                                                                            */
     function MblogDotccMap(keyword) {
         var map = new BMap.Map("map"); // 创建地图实例  
         var point = new BMap.Point(113.331213, 23.143274); // 创建点坐标  
