@@ -1,0 +1,8 @@
+.safe-bg1 {
+    background: url('../../img/safe/safe-bg1.png') no-repeat center center;
+}
+
+.bg-gray a {
+    font-size: 1.5rem;
+    color: #2196f3;
+}

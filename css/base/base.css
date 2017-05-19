@@ -322,6 +322,10 @@
 			padding: 0;
 		}
 
+		.p20 {
+			padding: 20px;
+		}
+
 		.p30 {
 			padding: 30px;
 		}
@@ -440,20 +444,18 @@
 		}
 
 		.bg-gray p {
-			font-size: 1.4rem;
+			font-size: 1.5rem;
 			line-height: 50px;
 			color: #999;
 			margin: 5vh;
-			font-size: 1.2rem;
 			letter-spacing: 2px;
 		}
 
 		.bg p {
-			font-size: 1.4rem;
+			font-size: 1.5rem;
 			line-height: 50px;
 			color: #666;
 			margin: 5vh;
-			font-size: 1.2rem;
 			letter-spacing: 2px;
 		}
 
