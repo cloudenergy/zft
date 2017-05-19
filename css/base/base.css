@@ -449,7 +449,7 @@
 
 		.bg-gray p {
 			font-size: 14px;
-			line-height: 50px;
+			line-height: 24px;
 			color: #999;
 			margin: 14px;
 			letter-spacing: 2px;
@@ -457,7 +457,7 @@
 
 		.bg p {
 			font-size: 14px;
-			line-height: 50px;
+			line-height: 24px;
 			color: #666;
 			letter-spacing: 2px;
 		}
@@ -540,4 +540,8 @@
 
 		.ml800 {
 			margin-left: 800px;
+		}
+
+		.ml100 {
+			margin-left: 100px;
 		}

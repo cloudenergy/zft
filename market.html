@@ -5,15 +5,26 @@
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>智能电表，智能水表，预付费电费，预付费水表，远程抄表预付费系统合作</title>
-    <meta name="keywords" content="智能电表，智能水表，预付费电费，预付费水表远程秒表，IC卡电表，IC卡水电，水电费网上缴费，物业费商城，物业费包括什么管理租付通合作">
-    <meta name="description" content="智能电表，智能水表，预付费电费，预付费水表商城是替换传统IC卡电表，IC卡水电进行远程抄表，完成水电费网上缴费，物业费商城，物业费包括什么管理系统欢迎合作">
-    <link rel="stylesheet" type="text/css" href="css/public.css">
-    <link rel="stylesheet" type="text/css" href="css/about.css">
-    <link rel="stylesheet" href="css/tshop.css">
+    <meta name="format-detection" content="telephone=no">
+    <title>租付通|青年公寓、白领公寓、银泰、万达、万象城等商业综合体智能电表，智能水表远程抄表；水电费，物业费，中央空调网上缴费系统</title>
+    <meta name="keywords" content="青年公寓、白领公寓、银泰、万达、万象城等商业综合体智能电表，智能水表远程抄表；水电费，物业费管理，中央空调网上缴费系统；">
+    <meta name="description" content="租付通是一个租户智能物业管理系统；通过智能电表，智能水表抄表系统解决青年公寓、白领公寓等长租公寓，银泰、万达、万象城等商业综合体以及红星美凯龙、百老汇，轻纺城等专业市场水电费、空调费、物业费的预付收缴问题，同时可以兼容对接第三方物业服务。">
+
+    <link rel="stylesheet" href="css/zl_index.css" />
+    <link rel="stylesheet" href="css/banner.min.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/zft/zft.css">
+
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/base/comm.js"></script>
+
+    <!-- 按分辨率加载不同css文件方法二 -->
+    <!--<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 1200px)" href="./css/product_1000.css" />
+        <link rel="stylesheet" type="text/css" media="screen and (min-width: 1200px) and (max-device-width: 1400px)" href="./css/product_1200.css" /> -->
+
+
+    <script src="js/banner.min.js"></script>
+
+
     <!-- 手机样式调用  -->
     <script type="text/javascript">
         function LoadCSS(url) {
@@ -34,6 +45,7 @@
             LoadCSS("css/product_1200.css");
         }
         if (ww < 1200) {
+            console.log(ww);
             //document.getElementById('header').style.cssText="width:96%";
             LoadCSS("css/product_1000.css");
             window.onload = function () {
@@ -41,13 +53,6 @@
             }
         }
     </script>
-
-    <!-- 百度统计  -->
-    <!-- -->
-
-
-
-
 </head>
 
 <body ondragstart="return false">
@@ -55,8 +60,8 @@
     <link rel="stylesheet" href="css/base/base.css">
     <link rel="stylesheet" href="css/zl_style.css" type="text/css" />
 
-    <header class="w-header transparent">
-        <div class="container">
+    <header class="w-header transparent" style="background:rgba(255,255,255,0.97);">
+        <div class=" container">
             <a class="logo" href="zft.html"></a>
             <div class="login-box">
                 <a class=""><img class="telpng" src="img/style/phone.png">0571-86996727</a><a class="btn-white btn" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3066119618&amp;site=qq&amp;menu=yes">在线咨询</a></div>
@@ -78,24 +83,32 @@
         </div>
     </header>
     <div class="clear"></div>
-    <div class="clearfix"></div>
-    <div class="topimg"></div>
-    <div class="qudao_con">
-        <div class="qd_pic1">
-            <img src="img/qudao/qd_02.jpg">
-        </div>
-        <div class="qd_text">
-            <img class="imgcss" src="img/qudao/qd_03.jpg">
-            <div class="cont">
-                <p>杭州古鸽是一家专注物联网、云计算技术的智能抄表系统高科技应用公司，智能仪表及系统方案在全国具有绝对的领先优势，期待您加盟成为我公司市场合作销售商。</p>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/market/market-banner.png" style="width: 100%" data-src="" alt="">
             </div>
         </div>
     </div>
 
+    <div class="container pt50 bg-gray">
+        <div class="smContainer m-0-a text-center">
+            <h1 class="aboutTitle">市场前景</h1>
+            <p class="aboutTitle-sm">Economy Outlook</p>
+            <p>随着移动互联网技术和产品的飞快发展，</p>
+            <p>传统项目式系统管理软件已无法满足现行需求，</p>
+            <p>随着一座座智能大楼拔地而起，内部管理的智能化程序也越来越高。</p>
+            <p>能源管理共分三个阶段：</p>
+            <p>总量采集、能耗分析并找出问题、定制解决方案</p>
+            <p>着三项工作必须逐步扩展，</p>
+            <p>节能管理系统才会有效。</p>
+        </div>
+    </div>
 
     <!--foot-->
     <div class="line"></div>
-
 
     <div class="space"></div>
     <div class="company layout">
@@ -110,9 +123,6 @@
     </div>
 
     <div class="space"></div>
-
-
-
 
     <div id="newfooter">
         <div class="layout">
@@ -131,7 +141,7 @@
                         <dd><a href="product.html" target="_blank">智能空调表</a></dd>
                     </dl>
                     <dl class="lastMargin">
-                        <dt><a href="fangan.html">解决方案</a></dt>
+                        <dt><a href="fangan.html" target="_blank">解决方案</a></dt>
                         <dd>
                             <a href="fangan.html" target="_blank">数据安全</a>
                         </dd>
@@ -179,8 +189,63 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(function () {
+            var oFocus = $('#focus'),
+                oRight = oFocus.find('.right'),
+                oLeft = oFocus.find('.left'),
+                aRLi = oRight.find('li'),
+                aLLi = oLeft.find('li'),
+                index = 0,
+                timer = null;
+            aRLi.click(function () {
+                index = $(this).index()
+                $(this).addClass('active').siblings().removeClass();
+                aLLi.eq(index).addClass('active').siblings().removeClass();
+                aLLi.eq(index).stop().animate({
+                    'opacity': 1
+                }, 300).siblings().stop().animate({
+                    'opacity': 0
+                }, 300);
+                stopFoucs();
+            })
+            aRLi.mouseenter(function () {
+                index = $(this).index()
+                $(this).addClass('active').siblings().removeClass();
+                aLLi.eq(index).addClass('active').siblings().removeClass();
+                aLLi.eq(index).stop().animate({
+                    'opacity': 1
+                }, 300).siblings().stop().animate({
+                    'opacity': 0
+                }, 300);
+                stopFoucs();
+            })
+            oLeft.mouseenter(function () {
+                stopFoucs();
+            }).mouseleave(function () {
+                startFocus();
+            });
+            timer = setInterval(function () {
+                startFocus();
+            }, 5000);
 
+            function startFocus() {
+                index++;
+                index = index > aRLi.size() - 1 ? 0 : index;
+                aLLi.eq(index).addClass('active').siblings().removeClass();
+                aLLi.eq(index).stop().animate({
+                    'opacity': 1
+                }, 300).siblings().stop().animate({
+                    'opacity': 0
+                }, 300);
+                aRLi.eq(index).addClass('active').siblings().removeClass();
+            }
 
+            function stopFoucs() {
+                clearInterval(timer);
+            }
+        })
+    </script>
 </body>
 
 </html>
