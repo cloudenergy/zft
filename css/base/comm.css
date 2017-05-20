@@ -70,7 +70,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 }
 
 .w-header.transparent .logo {
-	background-image: url(../../img/index/logo.png);
+	background-image: url(../../img/style/logo.png);
 	background-size: contain;
 	background-repeat: no-repeat
 }
@@ -79,7 +79,7 @@ only screen and (min-device-pixel-ratio:1.5) {
 only screen and (min--moz-device-pixel-ratio:1.5),
 only screen and (min-device-pixel-ratio:1.5) {
 	.w-header.transparent .logo {
-		background-image: url(../../img/index/logo.png);
+		background-image: url(../../img/style/logo.png);
 	}
 }
 

@@ -774,6 +774,10 @@ a.curr {
   text-align: right;
 }
 
+#newfooter .footerDl dl dt a {
+  font-size: 16px;
+}
+
 #newfooter .footerDl dl dt {
   float: left;
   width: 100%;
@@ -1029,7 +1033,7 @@ a.curr {
 }
 
 .clearfix:after {
-  content:".";
+  content: ".";
   display: block;
   height: 0;
   clear: both;

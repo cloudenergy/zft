@@ -133,7 +133,7 @@
 			width: 111px;
 			height: 27px;
 			margin-top: 16px;
-			background-image: url('../../img/index/logo.png');
+			background-image: url('../../img/style/logo.png');
 			background-repeat: no-repeat;
 			background-size: contain
 		}
@@ -186,13 +186,12 @@
 		}
 
 		.w-header.transparent {
-			position: relative;
 			-webkit-box-shadow: none;
 			box-shadow: none
 		}
 
 		.w-header.transparent .logo {
-			background-image: url('../../img/index/logo.png');
+			background-image: url('../../img/style/logo.png');
 			background-size: contain;
 			background-repeat: no-repeat
 		}
@@ -221,10 +220,6 @@
 			}
 		}
 
-		.w-header.transparent .w-navbar a.curr {
-			color: #2196f3;
-		}
-
 		.w-navbar a {
 			text-decoration: none;
 			font-size: 14px;
@@ -232,6 +227,10 @@
 			line-height: 60px;
 			padding-bottom: 0;
 			color: #333333;
+		}
+
+		.w-header .w-navbar a.curr {
+			color: #2196f3;
 		}
 
 		@media screen and (max-width:1277px) {
@@ -460,7 +459,7 @@
 		}
 
 		.aboutTitle-sm {
-			font-size: 1.2rem;
+			font-size: 18px;
 			color: #999;
 		}
 
