@@ -84,7 +84,7 @@
 
 </head>
 
-<body ondragstart="return false" onLoad="MblogDotccMap('浙江省国家大学科技园');">
+<body ondragstart="return false" onLoad="MblogDotccMap('杭州古鸽信息技术有限公司');">
     <link rel="stylesheet" href="css/base/base.css">
     <link rel="stylesheet" href="css/zl_style.css" type="text/css" />
 
@@ -245,13 +245,13 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=3690f5facff0a96fc7ff291c20f532e0&v=1.0&services=true"></script>
 <script type="text/javascript">
     /* 
-                                                                                                                                                                                                                                                        M博客百度地图API演示：查询地图经纬度
-                                                                                                                                                                                                                                                         http://mblog.cc 
-                                                                                                                                                                                                                                                         cody@mblog.cc
-                                                                                                                                                                                                                                                        */
+                                                                                                                                                                                                                                                                                                M博客百度地图API演示：查询地图经纬度
+                                                                                                                                                                                                                                                                                                 http://mblog.cc 
+                                                                                                                                                                                                                                                                                                 cody@mblog.cc
+                                                                                                                                                                                                                                                                                                */
     function MblogDotccMap(keyword) {
         var map = new BMap.Map("map"); // 创建地图实例  
-        var point = new BMap.Point(113.331213, 23.143274); // 创建点坐标  
+        var point = new BMap.Point(120.260785, 30.317253); // 创建点坐标  
 
         map.centerAndZoom(point, 15); // 初始化地图，设置中心点坐标和地图级别  
 
@@ -274,6 +274,14 @@
                 panel: "results_info"
             }
         });
+        map.centerAndZoom(point, 12);
+        var marker = new BMap.Marker(point); // 创建标注
+        map.addOverlay(marker); // 将标注添加到地图中
+
+        var label = new BMap.Label("古鸽信息技术有限公司国家大学科技园A508。电话：0571-86996727", {
+            offset: new BMap.Size(20, -10)
+        });
+        marker.setLabel(label);
         //alert(local);
         map.panBy(point);
 
