@@ -510,7 +510,6 @@
 			display: block;
 			width: 80px;
 			position: absolute;
-			top: 20px;
 			left: -24px;
 			background: #fff;
 		}
@@ -577,4 +576,12 @@
 
 		.onlyimg {
 			padding-top: 60px;
+		}
+
+		.w-navbar .scheme {
+			font-size: 14px;
+			margin-left: 40px;
+			line-height: 60px;
+			padding-bottom: 0;
+			color: #333333;
 		}
