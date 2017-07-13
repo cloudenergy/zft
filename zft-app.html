@@ -10,15 +10,15 @@
         var Terminal = {
             // 辨别移动终端类型
             platform: function () {
-                var u = navigator.userAgent,
-                    app = navigator.appVersion;
+                var ua = navigator.userAgent.toLowerCase();
                 return {
+                    wechat: /micromessenger/.test(ua),
                     // android终端或者uc浏览器
-                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1,
+                    android: /android/.test(ua) || /linux/.test(ua),
                     // 是否为iPhone或者QQHD浏览器
-                    iPhone: u.indexOf('iPhone') > -1,
+                    iPhone: /iphone/.test(ua),
                     // 是否iPad
-                    iPad: u.indexOf('iPad') > -1
+                    iPad: /ipad/.test(ua)
                 };
             }(),
             // 辨别移动终端的语言：zh-cn、en-us、ko-kr、ja-jp...
@@ -26,11 +26,13 @@
         }
 
         // 根据不同的终端，跳转到不同的地址，默认为iOS地址
-        var theUrl = 'https://itunes.apple.com/cn/app/租付通/id1237120322';
-        if (Terminal.platform.android) {
+        var theUrl = 'https://itunes.apple.com/cn/app/id1237120322';
+        if (Terminal.wechat) {
+            theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
+        } else if (Terminal.platform.android) {
             theUrl = 'http://7xruep.com1.z0.glb.clouddn.com/zft-1.0.10.apk';
         } else if (Terminal.platform.iPhone) {
-            theUrl = '你的iPhone APP对应下载地址：APP Store地址';
+            // theUrl = '你的iPhone APP对应下载地址：APP Store地址';
         } else if (Terminal.platform.iPad) {
             // 还可以通过language，区分开多国语言版
             switch (Terminal.language) {
@@ -47,7 +49,6 @@
                     // theUrl = '你的iPad APP（中文版-默认）对应下载地址：APP Store地址';
             }
         }
-
         location.href = theUrl;
     </script>
 </head>
