@@ -6,48 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>租付通APP下载（Android/IOS）</title>
     <script type="text/javascript">
-        // 获取终端的相关信息
         var Terminal = {
-            // 辨别移动终端类型
             platform: function () {
                 var ua = navigator.userAgent.toLowerCase();
                 return {
                     wechat: /micromessenger/.test(ua),
-                    // android终端或者uc浏览器
                     android: /android/.test(ua) || /linux/.test(ua),
-                    // 是否为iPhone或者QQHD浏览器
                     iPhone: /iphone/.test(ua),
-                    // 是否iPad
                     iPad: /ipad/.test(ua)
                 };
             }(),
-            // 辨别移动终端的语言：zh-cn、en-us、ko-kr、ja-jp...
             language: (navigator.browserLanguage || navigator.language).toLowerCase()
         }
 
-        // 根据不同的终端，跳转到不同的地址，默认为iOS地址
         var theUrl = 'https://itunes.apple.com/cn/app/id1237120322';
-        if (Terminal.wechat) {
-            theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
-        } else if (Terminal.platform.android) {
+        if (Terminal.platform.android) {
             theUrl = 'http://7xruep.com1.z0.glb.clouddn.com/zft-1.0.10.apk';
         } else if (Terminal.platform.iPhone) {
-            // theUrl = '你的iPhone APP对应下载地址：APP Store地址';
-        } else if (Terminal.platform.iPad) {
-            // 还可以通过language，区分开多国语言版
-            switch (Terminal.language) {
-                case 'en-us':
-                    // theUrl = '你的iPad APP（英文版）对应下载地址：APP Store地址';
-                    break;
-                case 'ko-kr':
-                    // theUrl = '你的iPad APP（韩语版）对应下载地址：APP Store地址';
-                    break;
-                case 'ja-jp':
-                    // theUrl = '你的iPad APP（日文版）对应下载地址：APP Store地址';
-                    break;
-                default:
-                    // theUrl = '你的iPad APP（中文版-默认）对应下载地址：APP Store地址';
-            }
+            // theUrl = 'APP Store地址';
+        }
+        // else if (Terminal.platform.iPad) {
+        //     switch (Terminal.language) {
+        //         case 'en-us':
+        //             // theUrl = 'APP Store地址';
+        //             break;
+        //         case 'ko-kr':
+        //             // theUrl = 'APP Store地址';
+        //             break;
+        //         case 'ja-jp':
+        //             // theUrl = 'APP Store地址';
+        //             break;
+        //         default:
+        //             // theUrl = 'APP Store地址';
+        //     }
+        // }
+        if (Terminal.wechat) {
+            theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
         }
         location.href = theUrl;
     </script>
