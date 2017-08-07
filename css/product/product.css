@@ -65,10 +65,14 @@
 }
 
 .product-bg2 {
-    background: url('../../img/product/product-bg2.png') 0 0 no-repeat;
-    background-size: 100% 100%;
+    /* background: url('../../img/product/product-bg2.png') 0 0 no-repeat; */
+    /* background-size: 100% 100%;
     width: 100%;
-    min-height: 800px;
+    min-height: 800px; */
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    display: block;
 }
 
 .product-bg3 {
