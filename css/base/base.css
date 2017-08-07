@@ -586,3 +586,39 @@
 			padding-bottom: 0;
 			color: #333333;
 		}
+
+		.mt-120 {
+			margin-top: -120px;
+		}
+
+		.m-font {
+			font-size: 16px;
+		}
+
+		.l-font {
+			font-size: 20px;
+		}
+
+		.w-font {
+			font-weight: bold;
+		}
+
+		.gray {
+			color: #666;
+		}
+
+		.cm-bg1 {
+			background: url('../../img/cloudmeter/cm-bg1.jpg') center center no-repeat;
+			height: 600px;
+		}
+
+		.cm-bg2 {
+			width: 100%;
+			max-width: 1920px;
+			height: auto;
+			display: block;
+		}
+
+		.mt120 {
+			margin-top: 120px;
+		}
