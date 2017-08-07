@@ -10,11 +10,9 @@
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/cpxq.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/safe/safe.css">
-    <link rel="stylesheet" type="text/css" href="css/product/product.css">
     <script src="https://og6593g2z.qnssl.com/fundebug.0.1.7.min.js" apikey="a9ecc475816c75575f3d68c4880ed0ad7842667e0d886dbd578ed10e5bdba9d6"></script>
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/base/comm.js"></script>
+    <!-- <script type="text/javascript" src="js/base/comm.js"></script> -->
     <!-- 手机样式调用  -->
     <script type="text/javascript">
         function LoadCSS(url) {
@@ -47,7 +45,7 @@
 
 <body ondragstart="return false">
     <link rel="stylesheet" href="css/base/base.css">
-    <link rel="stylesheet" href="css/zl_style.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/zl_style.css" type="text/css" /> -->
 
     <header class="w-header transparent">
         <div class="container">
@@ -56,8 +54,13 @@
                 <a class=""><img class="telpng" src="img/style/phone.png">0571-86996727</a><a class="btn-white btn" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3066119618&amp;site=qq&amp;menu=yes">在线咨询</a></div>
             <nav class="w-navbar">
                 <a href="index.html">首页</a>
-                <a href="product.html">产品</a>
-                <div class="scheme curr">方案
+                <div class="scheme curr">产品
+                    <ul class="scheme-list">
+                        <li><a href="cloudmeter.html">云控电表</a></li>
+                        <li><a href="product.html">智慧云能源</a></li>
+                    </ul>
+                </div>
+                <div class="scheme">方案
                     <ul class="scheme-list">
                         <li><a href="application.html">应用实现</a></li>
                         <li><a href="safe.html">数据安全</a></li>
@@ -74,151 +77,107 @@
     </header>
     <div class="clear"></div>
     <div class="onlyimg">
-        <img class="imgcss" src="img/case/case-banner.jpg">
+        <img class="imgcss" src="img/cloudmeter/cloudmeter-banner.jpg">
     </div>
-
-    <div class="container bg-gray text-center p30">
-        <h1 class="aboutTitle">项目案例</h1>
-        <p>经过公司团队的不断努力，积累了丰富的行业经验，研发出先进的专业技术。智慧云能源管理系统以先进的运维理念和系统的解决方案得到业界一致的认可和支持，应用</p>
-        <p>项目迅速增加，为越来越多的大型公共建筑提供能源监控及收费管理服务，实施项目涵盖了商业建筑、政府办公楼、校园、酒店公寓、城市综合体等多种类型建筑。</p>
+    <div class="container text-center mt-120">
+        <img src="img/cloudmeter/cloudmeter.png" alt="云控电表">
     </div>
-
-    <div class="container text-center p30 bg">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/czdnsz.jpg" alt="常州迪诺水镇"></div>
-                <p>常州迪诺水镇</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/szzx.jpg" alt="苏州中心"></div>
-                <p>苏州中心</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/zdytc.png" alt="中大银泰城"></div>
-                <p>中大银泰城</p>
-            </div>
+    <div class="container text-center">
+        <div class="inline-block" style="margin-right: -5px;">
+            <div><img src="img/cloudmeter/cm-01.jpg" alt="抄表困难配图"></div>
+            <p class="gray">现场抄表手工计算</p>
+            <p class="l-font w-font gray">抄 表 算 费 累 死 人 ！</p>
+        </div>
+        <div class="inline-block">
+            <div><img src="img/cloudmeter/cm-02.jpg" alt="抄表困难配图"></div>
+            <p class="gray">能耗费用无凭证</p>
+            <p class="l-font w-font gray">恶 意 欠 费 天 天 催 ！</p>
+        </div>
+        <div class="inline-block" style="margin-left: -4px;">
+            <div><img src="img/cloudmeter/cm-03.jpg" alt="抄表困难配图"></div>
+            <p class="gray">正在用的软件不好用</p>
+            <p class="l-font w-font gray">管 理 改 造 施 工 难 ！</p>
         </div>
     </div>
 
-    <div class="container text-center p30 bg-gray">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/hzlgcxzx.png" alt="杭州绿谷创新中心"></div>
-                <p>杭州绿谷创新中心</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/hlfd.png" alt="黄龙饭店"></div>
-                <p>黄龙饭店</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/nblsgc.png" alt="宁波联盛广场"></div>
-                <p>宁波联盛广场</p>
-            </div>
+    <div class="container text-center smContainer cm-bg1 m-0-a pt100"></div>
+
+    <div class="container text-center mt30">
+        <div class="inline-block" style="margin-right: 145px;">
+            <div><img src="img/cloudmeter/cm-icon1.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">远程实时查询读数及用量，</p>
+            <p class="m-font w-font gray">支持远程断电、送电</p>
+            <p class="gray">随时随地查询仪表用量及读数，管理者</p>
+            <p class="gray">（或租户）可远程控制电表的开关状态</p>
+            <p class="gray" style="visibility: hidden;">凑高度</p>
+        </div>
+        <div class="inline-block">
+            <div><img src="img/cloudmeter/cm-icon2.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">预付费充值，无资金压力</p>
+            <p class="m-font w-font gray">自动计费扣费，无需IC卡</p>
+            <p class="gray">先缴费，再用能，盘活管理者垫付资</p>
+            <p class="gray">金，给资金周转带来巨大活力。</p>
+            <p class="gray" style="visibility: hidden;">凑高度</p>
+        </div>
+        <div class="inline-block" style="margin-left: 146px;">
+            <div><img src="img/cloudmeter/cm-icon3.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">支付宝或微信支付</p>
+            <p class="m-font w-font gray">清晰的财务统计报表</p>
+            <p class="gray">租户可随时随地用手机缴费，管理者可</p>
+            <p class="gray">以看到清晰的充值流水、分类统计和电</p>
+            <p class="gray"> 费消耗等报表</p>
         </div>
     </div>
-
-    <div class="container text-center p30 bg">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/wdzx.png" alt="五迪中心"></div>
-                <p>五迪中心</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/xhwhgc.png" alt="西湖文化广场"></div>
-                <p>西湖文化广场</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/zdytc.png" alt="新天地东方茂"></div>
-                <p>新天地东方茂</p>
-            </div>
+    <div class="container text-center mt120">
+        <div class="inline-block" style="margin-right: 145px;">
+            <div><img src="img/cloudmeter/cm-icon4.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">自定义电价，支持公共能耗分</p>
+            <p class="m-font w-font gray">摊，自定义合租者分摊比例</p>
+            <p class="gray">可对公共用电进行分摊收费，根据每个</p>
+            <p class="gray">根据每个房间的面积、人数等实际情况设置租户</p>
+            <p class="gray">分摊比例</p>
+        </div>
+        <div class="inline-block">
+            <div><img src="img/cloudmeter/cm-icon5.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">自动催费，可配置欠费断电，</p>
+            <p class="m-font w-font gray">管理者可接收欠费名单</p>
+            <p class="gray">余额不足、欠费等信息提醒，自动断电</p>
+            <p class="gray">杜绝租户恶意欠费。自动生成租户欠费</p>
+            <p class="gray">报表推送至管理者</p>
+        </div>
+        <div class="inline-block" style="margin-left: 146px;">
+            <div><img src="img/cloudmeter/cm-icon6.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">安全用电，超出负荷时系统自</p>
+            <p class="m-font w-font gray">动报警或断电，消除安全隐患</p>
+            <p class="gray">当空调、烤箱、电炉等大功率电器使用</p>
+            <p class="gray">过多而导致电流负荷过大，系统将发出</p>
+            <p class="gray">警报并自动断电，避免火灾发生。</p>
         </div>
     </div>
-
-    <div class="container text-center p30 bg-gray">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/lygsjc.png" alt="连云港水晶城"></div>
-                <p>连云港水晶城</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/EFC.png" alt="EFC"></div>
-                <p>EFC</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/nbxzzx.png" alt="宁波行政中心"></div>
-                <p>宁波行政中心</p>
-            </div>
+    <div class="container text-center mt120">
+        <div class="inline-block" style="margin-right: 145px;">
+            <div><img src="img/cloudmeter/cm-icon7.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">提供节能建议，降低能耗，</p>
+            <p class="m-font w-font gray">减少浪费</p>
+            <p class="gray">根据租户用电习惯，智能生成节能建议，</p>
+            <p class="gray">让能源得到合理分配。</p>
+        </div>
+        <div class="inline-block">
+            <div><img src="img/cloudmeter/cm-icon8.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">提供标准API，无缝对接第三</p>
+            <p class="m-font w-font gray">方管理系统</p>
+            <p class="gray">提供强大的API接口，便于公寓管理方将</p>
+            <p class="gray">所有功能整合到自有的管理系统中</p>
+        </div>
+        <div class="inline-block" style="margin-left: 146px;">
+            <div><img src="img/cloudmeter/cm-icon9.png" width="300" height="120" alt="抄表困难配图"></div>
+            <p class="m-font w-font gray">WiFi传输，通讯稳定</p>
+            <p class="m-font w-font gray">安装方便，调试简单</p>
+            <p class="gray">无线通讯，省去复杂布线，节约施工成</p>
+            <p class="gray">本，设置好关联ID，通电即投入使用。</p>
         </div>
     </div>
-
-    <div class="container text-center p30 bg">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/hzgjhyzx.png" alt="杭州国际会议中心"></div>
-                <p>杭州国际会议中心</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/cdyytgl.png" alt="成都远洋太古里"></div>
-                <p>成都远洋太古里</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/jlcfzx.png" alt="金龙财富中心"></div>
-                <p>金龙财富中心</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container text-center p30 bg-gray">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/rhctgjgc.png" alt="仁和春天国际广场"></div>
-                <p>仁和春天国际广场</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/ycxlgc.png" alt="盐城新龙广场"></div>
-                <p>盐城新龙广场</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/wzcsdx.png" alt="温州城市大学"></div>
-                <p>温州城市大学</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container text-center p30 bg">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/lybg.png" alt="柳莺宾馆"></div>
-                <p>柳莺宾馆</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/nblhlyy.png" alt="宁波李惠利医院"></div>
-                <p>宁波李惠利医院</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/whtjyy.png" alt="武汉同济医院"></div>
-                <p>武汉同济医院</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container text-center p30 bg-gray">
-        <div class="m-0-a">
-            <div class="inline-block">
-                <div><img src="img/case/rhctgjgc.png" alt="义乌万豪酒店"></div>
-                <p>义乌万豪酒店</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/ywzxyy.png" alt="义乌中心医院"></div>
-                <p>义乌中心医院</p>
-            </div>
-            <div class="inline-block">
-                <div><img src="img/case/ynxglldjd.png" alt="云南香格里拉大酒店"></div>
-                <p>云南香格里拉大酒店</p>
-            </div>
-        </div>
-    </div>
-
+    <div class="container text-center m-0-a mt120"><img class="cm-bg2" src="img/cloudmeter/cm-bg2.jpg" alt=""></div>
     <div class="space"></div>
     <div class="company layout">
         <h3 class="font-black">合作伙伴</h3>
