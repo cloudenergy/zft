@@ -607,18 +607,31 @@
 			color: #666;
 		}
 
-		.cm-bg1 {
-			background: url('../../img/cloudmeter/cm-bg1.jpg') center center no-repeat;
-			height: 600px;
+		.cm-bg2 {
+			background: #4a4a4a;
+			width: 100%;
+			margin-top: -3px;
 		}
 
-		.cm-bg2 {
-			width: 100%;
-			max-width: 1920px;
-			height: auto;
-			display: block;
+		.cm-bg3 {
+			height: 800px;
+			background: url('../../img/cloudmeter/cm-bg3.png') no-repeat bottom right;
+		}
+
+		.bg3-left {
+			text-align: left;
+			margin-left: 7vw;
+			padding-top: 200px;
+		}
+
+		.cm-bg-gray {
+			background-color: #e8e6e6;
 		}
 
 		.mt120 {
 			margin-top: 120px;
+		}
+
+		.mt80 {
+			margin-top: 80px;
 		}
