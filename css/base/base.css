@@ -604,6 +604,18 @@
 			color: #666;
 		}
 
+		.cm-bg1 {
+			background: url('../../img/cloudmeter/cm-bg1.jpg') no-repeat center center;
+			height: 800px;
+			width: 100%;
+		}
+
+		.cm-bg4 {
+			background: url('../../img/cloudmeter/cm-bg2.jpg') no-repeat center center;
+			height: 800px;
+			width: 100%;
+		}
+
 		.cm-bg2 {
 			background: #4a4a4a;
 			width: 100%;
