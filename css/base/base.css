@@ -261,9 +261,6 @@
 		}
 
 		@media screen and (min-width:1500px) {
-			.w-header.transparent .w-navbar {
-				padding: 19px 16% 20px 0
-			}
 			.w-header.transparent .w-navbar a {
 				padding-bottom: 0;
 				line-height: 20px;
