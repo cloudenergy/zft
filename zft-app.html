@@ -19,7 +19,7 @@
             language: (navigator.browserLanguage || navigator.language).toLowerCase()
         }
 
-        var theUrl = 'https://itunes.apple.com/cn/app/id1237120322';
+        var theUrl = 'https://itunes.apple.com/cn/app/id1237120322?timestamp=' + new Date().valueOf();
         if (Terminal.platform.android) {
             theUrl = 'http://7xruep.com1.z0.glb.clouddn.com/zft-1.2.0.apk';
         } else if (Terminal.platform.iPhone) {
