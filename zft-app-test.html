@@ -15,15 +15,16 @@
             position: relative;
             margin: 0;
             padding: 0;
+            background-color: rgba(0, 0, 0, 0.8);
         }
 
         .android-wechat body:before {
             position: absolute;
-            top: 15px;
-            right: 15px;
-            bottom: 15px;
-            left: 15px;
-            background-color: rgba(0, 0, 0, 0.8);
+            content: '';
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            left: 10px;
             background-image: url(img/wechat.png);
             background-size: initial;
             background-position: right top;
@@ -32,7 +33,7 @@
 
         @media (max-width: 565px) {
             .android-wechat body:before {
-                background-size: cover;
+                background-size: 100%;
             }
         }
     </style>
