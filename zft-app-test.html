@@ -26,6 +26,10 @@
         #wechat p img {
             max-width: 100%;
         }
+
+        .android-wechat #wechat {
+            display: block;
+        }
     </style>
     <script type="text/javascript">
         var Terminal = {
@@ -64,7 +68,8 @@
         // }
         if (Terminal.platform.wechat && Terminal.platform.android) {
             // theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
-            document.querySelector('#wechat').style.display = 'block';
+            document.documentElement.className = 'android-wechat';
+            document.documentElement.setAttribute('data-useragent', navigator.userAgent)
         } else {
             location.href = theUrl;
         }
