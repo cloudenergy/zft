@@ -1,9 +1,10 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TEST</title>
+    <title>租付通APP下载（Android / iOS）</title>
     <style>
         #wechat {
             position: fixed;
@@ -17,9 +18,12 @@
         }
 
         #wechat p {
-            text-align: center;
-            margin-top: 10%;
-            padding: 0 5%;
+            text-align: right;
+            padding: 5%;
+        }
+
+        #wechat p img {
+            max-width: 100%;
         }
     </style>
     <script type="text/javascript">
@@ -60,13 +64,16 @@
         if (Terminal.wechat) {
             // theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
             // theUrl = 'http://mp.weixin.qq.com/mp/redirect?url=' + theUrl + '#weixin.qq.com#wechat_redirect';
+            document.title = '点击下载应用';
         }
-        // location.href = theUrl;
+        location.href = theUrl;
     </script>
 </head>
+
 <body>
     <div id="wechat">
         <p><img src="img/wechat.png" alt="微信打开" /></p>
     </div>
 </body>
+
 </html>
