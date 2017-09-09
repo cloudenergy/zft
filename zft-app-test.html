@@ -62,9 +62,8 @@
         //             // theUrl = 'APP Store地址';
         //     }
         // }
-        if (Terminal.wechat && Terminal.platform.android) {
+        if (Terminal.platform.wechat && Terminal.platform.android) {
             // theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
-            // theUrl = 'http://mp.weixin.qq.com/mp/redirect?url=' + theUrl + '#weixin.qq.com#wechat_redirect';
             document.querySelector('#wechat').style.display = 'block';
         } else {
             location.href = theUrl;
