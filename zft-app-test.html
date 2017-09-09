@@ -6,14 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>租付通APP下载（Android / iOS）</title>
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
         .android-wechat body {
-            display: block;
+            position: relative;
             margin: 0;
             padding: 0;
+        }
+
+        .android-wechat body:before {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
             background-color: rgba(0, 0, 0, 0.8);
             background-image: url(img/wechat.png);
-            background-size: contain;
+            background-size: initial;
             background-position: right top;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 565px) {
+            .android-wechat body:before {
+                background-size: cover;
+            }
         }
     </style>
     <script type="text/javascript">
