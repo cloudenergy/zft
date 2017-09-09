@@ -35,22 +35,9 @@
             theUrl = 'http://7xruep.com1.z0.glb.clouddn.com/zft-1.2.0.apk';
         } else if (Terminal.platform.iPhone) {
             // theUrl = 'APP Store地址';
+            // } else if (Terminal.platform.iPad) {
+            //     theUrl = 'APP Store地址';
         }
-        // else if (Terminal.platform.iPad) {
-        //     switch (Terminal.language) {
-        //         case 'en-us':
-        //             // theUrl = 'APP Store地址';
-        //             break;
-        //         case 'ko-kr':
-        //             // theUrl = 'APP Store地址';
-        //             break;
-        //         case 'ja-jp':
-        //             // theUrl = 'APP Store地址';
-        //             break;
-        //         default:
-        //             // theUrl = 'APP Store地址';
-        //     }
-        // }
         if (Terminal.platform.wechat && Terminal.platform.android) {
             // theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
             document.documentElement.className = 'android-wechat';
