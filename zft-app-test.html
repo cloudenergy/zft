@@ -7,6 +7,7 @@
     <title>租付通APP下载（Android / iOS）</title>
     <style>
         #wechat {
+            display: none;
             position: fixed;
             left: 0;
             top: 0;
@@ -61,12 +62,13 @@
         //             // theUrl = 'APP Store地址';
         //     }
         // }
-        if (Terminal.wechat) {
+        if (Terminal.wechat && Terminal.platform.android) {
             // theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
             // theUrl = 'http://mp.weixin.qq.com/mp/redirect?url=' + theUrl + '#weixin.qq.com#wechat_redirect';
-            document.title = '点击下载应用';
+            document.querySelector('#wechat').style.display = 'block';
+        } else {
+            location.href = theUrl;
         }
-        location.href = theUrl;
     </script>
 </head>
 
