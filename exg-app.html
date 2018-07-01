@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电小鸽APP下载（Android / iOS）</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        .android-wechat body {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .android-wechat body:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url(img/wechat.png);
+            background-size: initial;
+            background-position: right top;
+            background-repeat: no-repeat;
+        }
+
+        @media (max-width: 575px) {
+            .android-wechat body:before {
+                background-size: 100%;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        var Terminal = {
+                platform: function () {
+                    var ua = navigator.userAgent.toLowerCase();
+                    return {
+                        Wechat: /micromessenger/.test(ua),
+                        Android: /android/.test(ua) || /linux/.test(ua),
+                        iOS: /ipad|iphone/.test(ua)
+                    };
+                }(),
+                language: (navigator.browserLanguage || navigator.language).toLowerCase()
+            },
+            theUrl = 'https://exg-app.oss-cn-beijing.aliyuncs.com/exg-app-latest.apk';
+        if (Terminal.platform.iOS) {
+            theUrl = 'https://itunes.apple.com/cn/app/id1365519317?timestamp=' + new Date().valueOf();
+        }
+        if (Terminal.platform.Wechat && !Terminal.platform.iOS) {
+            // theUrl = 'http://' + location.host + '/mp/redirect?url=' + encodeURIComponent(theUrl);
+            document.documentElement.className = 'android-wechat';
+            document.documentElement.setAttribute('data-useragent', navigator.userAgent)
+        } else {
+            location.href = theUrl;
+        }
+    </script>
+</head>
+
+<body></body>
+<script>
+    //TODO：do we need this?
+    // var _hmt = _hmt || [];
+    // (function () {
+    //     var hm = document.createElement("script");
+    //     hm.src = "https://hm.baidu.com/hm.js?52b02a9020b5fe8a3f45f374d5a4d3fa";
+    //     var s = document.getElementsByTagName("script")[0];
+    //     s.parentNode.insertBefore(hm, s);
+    // })();
+</script>
+
+</html>
